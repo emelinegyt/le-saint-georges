@@ -325,21 +325,41 @@ button.image{
     height: 100%;
   }
 
-  .avis{
-
-    background-image: url(ressources/fond.jpg);
-  }
 
 
   /*____________ Témoignages ____________*/
 
-.avis{
+  section.avis H1{
+
+    color: white;
+    font-size: 30px;
+    padding-top: 70px;
+  }
+  .avis{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(ressources/fond.jpg);
+  }
+
+
+  .temoignage{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.paul{
 
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 40px;
 }
-
-
 
 h3{
 
@@ -356,14 +376,10 @@ section.avis div p{
 
 }
 
-.temoignage{
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px;
-}
+
+
+
+
 
 
 footer{
@@ -376,3 +392,55 @@ footer{
     background: rgb(61, 57, 57);
     color: white;
 }
+
+/*____________ PORTABLE ____________*/
+
+
+@media screen and (max-width: 940px){
+
+
+    .avis{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-image: url(ressources/fond.jpg);
+    }
+  
+  
+    .temoignage{
+      width: 80%;
+      display: flex;
+      align-items: center;
+      padding: 20px;
+  }
+
+  }
+
+
+  @media screen and (max-width: 650px){
+
+
+    .avis{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(ressources/fond.jpg);
+    }
+  
+  
+    .temoignage{
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .paul{
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  }
+  
