@@ -9,28 +9,32 @@
 
 header{
     width: 100%;
-    margin: auto;
     display: flex;
+    align-items: center;
     justify-content: center;
-    padding: 30px;
-    background-color: rgb(255, 255, 255);
-    opacity: 0.7;
+    padding: 10px;
+    opacity: 0.9;
     position: fixed;
+    background: black;
+    z-index: 8;
+
 
     
 }
 
 nav{
 
-        width: 80%;
+        width: 100%;
        
         
  
 }
 nav ul{
 
+    width: 90%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     list-style: none;
     text-transform: uppercase;
  
@@ -40,24 +44,38 @@ nav ul{
 ul li a {
 
     text-decoration: none;
-    color: rgb(59, 59, 59);
+    color: rgb(255, 255, 255);
     letter-spacing: 1pt;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.5s;
 }
 
 
 ul li a:hover {
 
     text-decoration: none;
-    color: rgb(190, 155, 134);
+    color: rgb(236, 91, 72);
     letter-spacing: 1pt;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.5s;
 }
 
+.logotype{
+
+    padding-left: 50px;
+    padding-top: 10px;
+    width:35%;
+    height: 90px;
+}
+.logo{
+
+    width: 60%;
+}
 
 section.accueil{
     height: 100vh;
     display: flex;
-    justify-content: center;
-    background-image: url(ressources/table-repas.jpg);
+    background-image: url(ressources/accueil.png);
     background-attachment: fixed;
     background-size: cover;
 }
@@ -66,13 +84,15 @@ section.accueil{
 /*____________ ACCUEIL ____________*/
 
 .presentation{
-
+    width: 100vh;
     color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: center;
+    align-items: flex-start;
     text-align: center;
+    padding-left: 140px;
+    
 }
 
 h1{
@@ -85,31 +105,51 @@ h1{
 
 p{
 
-    letter-spacing: 1pt;
+
     font-size: 17px;
     text-transform: uppercase;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /*_____________LE RESTAURANT ____________*/
 
-
-section#restaurant{
-   
-    width: 60%;
+#lieu{
+    position: relative;
+    width: 80%;
     margin: auto;
+    height: 100vh;
+}
+
+#restaurant{
+
+
+        width: 80%;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+section#restaurant.cave{
+   
+    width: 80%;
+    margin-top: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    background-color: rgb(252, 239, 215);
-    margin-top: 150px;
-    margin-bottom: 150px;
+}
+
+
+
+.resto{
+
+    padding-top: 10px;
 }
 
 .chef{
     
-    width: 500px;
-    height: 400px;
+width: 50%;
     
 }
 
@@ -121,142 +161,46 @@ h2{
     text-transform: uppercase;
 }
 
-.texte{
-
+p.texte{
+    
     text-transform: none;
     text-align: justify;
-    padding: 40px;
-}
-
-@media screen and (max-width: 500px){
-
-
-section#restaurant{
-
-    width: 70%;
-    padding-top: 60px;
-    display: flex;
-    flex-direction: column;
-}
-
-.chef{
-    
-    width: 70%;
-    height: 70%;
-    padding: 0;
-    
-}
-}
-/*____________ CARTE & MENU ____________*/
-
-
-#carte{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    background-image: url(ressources/fond.jpg);
-}
-
-
-.color{
-
-    width: 50%;
-}
-
-div.menu
-{
-
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-
-button.menucarte{
-
-    color: rgb(44, 44, 44);
-    font-size: 18px;
-    padding-right: 50px;
-    padding-left: 50px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    transition: 0.8s;
-    font-family: 'Cormorant Garamond', serif;
-}
-
-button.menucarte:hover{
-
-    color: rgb(231, 179, 100);
-    font-size: 18px;
-    padding-right: 50px;
-    padding-left: 50px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    transform: scale(1.1);
-    transition: 0.8s;
-    font-family: 'Cormorant Garamond', serif;
-}
-
-
-/*____________ CARTE & MENU ____________*/
-
-@media screen and (max-width: 800px){
-
-
-#carte{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    background-image: url(ressources/fond.jpg);
-}
-
-button.menucarte{
-
-    color: rgb(44, 44, 44);
-    background: white;
-    border: 0px;
-    font-size: 18px;
-    padding-right: 40px;
     padding-left: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin: 30px;
-    transition: 0.8s;
-    font-family: 'Cormorant Garamond', serif;
+    padding-right: 40px;
+    padding-top: 30px;
+    font-size: 12px;
 }
 
-
-}
-
-
-
-/*____________ Réserver ____________*/
-
-.reservation{
-    height: 300px;
+div.reserver{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-button.reserver{
+
+.reserver button{
+
+    border: 0;
+    z-index: 2;
+    transition: 1s;
+    
+}
+a.reservez{
     width: 260px;
-    margin-top: 50px;
     padding: 19px;
+    margin-top: -20px;
     margin-bottom: -20px;
     background-color: rgb(255, 212, 118);
     color: rgb(41, 41, 41);
-    border: 0;
     font-family: 'Cormorant Garamond', serif;
     text-transform: uppercase;
     font-size: 15px;
     z-index: 2;
-    transition: 1s;
+ 
+    text-decoration: none;
 }
 
-button.reserver:hover{
+.reserver button:hover{
 
         transition: 1s;
         transform: scale(1.1);
@@ -264,20 +208,128 @@ button.reserver:hover{
       }
 
 
-hr
-{
-   width: 100%;
-   background: rgb(63, 63, 63);
-   height: 4px;
-   border: 0px
+
+
+
+/*____________ CARTE & MENU ____________*/
+
+
+#carte{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    margin-top: 90px;
 }
+
+
+.pdf{
+    display: flex;
+    height: 65%;
+    width: 100%;
+    background: black;
+}
+.color{
+
+    height: 100%;
+}
+
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+a.cartemenu{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left:40px;
+    padding-right:40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    color: black;
+    background: white;
+    border: 0;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+a.cartemenu:hover{
+
+        color: rgb(255, 212, 118);
+        transform: scale(1.1);
+        transition: 0.5s;
+
+    }
+
+
+/*____________ Réserver ____________*/
+
+.animation{
+    width: 100%;
+    
+}
+
+.reservation{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(248, 242, 233);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reservation button{
+
+
+    width: 260px;
+    margin-top: 50px;
+    padding: 19px;
+    margin-bottom: -20px;
+    background-color: rgb(255, 212, 118);
+    border: 0;
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: 1s;
+    
+}
+
+a.reserver{
+
+    width: 260px;
+    text-decoration: none;
+    color: rgb(41, 41, 41);
+}
+
+
+.reservation button:hover{
+
+        transition: 1s;
+        transform: scale(1.1);
+        text-decoration: none;
+      
+      }
+
 
 
 /*____________ galerie ____________*/
 
-.gallery{
+#gallery{
 
     width: 70%;
+    padding-top: 180px;
+    padding-bottom: 80px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -285,32 +337,22 @@ hr
     align-items: center;
 }
 
-button.image{
+.lagalerie{
 
-    width: 260px;
-    margin-top: 50px;
-    padding: 19px;
-    margin-bottom: -20px;
-    background-color: rgb(63, 63, 63);
-    color: rgb(255, 255, 255);
-    border: 0;
-    font-family: 'Cormorant Garamond', serif;
-    text-transform: uppercase;
-    font-size: 15px;
-    z-index: 2;
+    padding-bottom: 40px;
 
 }
-
-
 .galerie {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    grid-gap: 10px;
-    grid-auto-flow: dense;
-    list-style: none;
-    max-width: 100%;
-    padding-bottom: 100px;
-  }
+        display: grid;
+        justify-content: center;
+        list-style: none;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 20%;
+        grid-template-rows: auto;
+        grid-gap: 30px;
+      }
+      
+
   .galerie li {
     border: 1px solid #ccc;
 
@@ -325,6 +367,39 @@ button.image{
     height: 100%;
   }
 
+  /*____________ Bouton réserver ____________*/
+
+#gallery button{
+
+
+    width: 260px;
+    padding: 19px;
+    margin-bottom: -50px;
+    background-color: rgb(255, 212, 118);
+    border: 0;
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: 1s;
+    z-index: 3;
+    
+}
+
+a.reserver{
+
+    width: 260px;
+    text-decoration: none;
+    color: rgb(41, 41, 41);
+}
+
+
+#gallery button:hover{
+
+        transition: 1s;
+        transform: scale(1.1);
+        text-decoration: none;
+      
+      }
 
 
   /*____________ Témoignages ____________*/
@@ -369,14 +444,48 @@ h3{
 
 section.avis div p{
 
+    font-size: 13px;
     color: white;
     text-transform: none;
     text-align: center;
-    padding: 20px;
+    padding: 14px;
 
 }
 
 
+
+
+
+
+
+  /*____________ CONTACT____________*/
+
+.contact{
+
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.adresse{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+
+div.adresse p {
+    text-align: center;
+    font-size: 14px;
+    text-transform: initial;
+    padding: 20px;
+}
 
 
 
@@ -393,54 +502,647 @@ footer{
     color: white;
 }
 
-/*____________ PORTABLE ____________*/
+
+@media screen and (min-width:1290px){
 
 
-@media screen and (max-width: 940px){
+#lieu{
+
+     height: 100vh;
+     padding-top: 70px;
+
+}
+}
 
 
-    .avis{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background-image: url(ressources/fond.jpg);
+
+@media screen and (min-width: 1000px) and (max-width:1290px){
+
+
+    
+    nav{
+    
+            width: 80%;
+            display: flex;
+            justify-content: center;
+           
+            
+     
     }
-  
-  
-    .temoignage{
-      width: 80%;
-      display: flex;
-      align-items: center;
-      padding: 20px;
-  }
-
-  }
-
-
-  @media screen and (max-width: 650px){
-
-
-    .avis{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-image: url(ressources/fond.jpg);
+    nav ul{
+    
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        text-transform: uppercase;
+     
+        
     }
-  
-  
-    .temoignage{
-      width: 90%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  }
+    
+    ul li a {
 
-  .paul{
+        font-size: 13px;
+    }
+    
+    
+    ul li a:hover {
+    
+        text-decoration: none;
+        color: rgb(236, 91, 72);
+        letter-spacing: 1pt;
+        font-family: 'Montserrat', sans-serif;
+        transition: 0.5s;
+    }
+ 
+    
+.logotype{
+        display: flex;
+        align-items: center;
+        width: 20%;
+        padding-left: 40px;
+        padding-top: 10px;
+    }
+.logo{
 
+        width: 100%;
+    }
+
+/*_____________LE RESTAURANT ____________*/
+    
+    #lieu{
+    
+        height: 110vh;
+    }
+    section#restaurant{
+       
+        width: 80%;
+        padding-top: 90px;
+        padding-bottom: 0px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+section#restaurant.cave {
+    
+        padding-bottom: 90px;
+        padding-top: 0px;
+    }
+
+    .chef{
+        
+    width: 50%;
+    padding: 0px;
+    
+    }
+    
+    h2{
+    
+        padding-top: 30px;
+    }
+
+ 
+    /*____________ CARTE & MENU ____________*/
+
+    .pdf{
+        display: flex;
+        width: 100%;
+        background: black;
+    }
+
+    
+    .color{
+        width: 40vh;
+    }
+    
+    
+/*____________ Réserver ____________*/
+
+.reservation p{
+
+    text-align: center;
+}
+
+/*____________ galerie___________*/
+
+
+#gallery
+
+{
+    padding-top: 70px;
+}
+
+/*____________ CONTACT____________*/
+        
+     .contact{
+        
+        width: 90%;
+    
+    
+    }
+    
+    .adresse{
+    
+        padding: 10px;
+    }
+}
+
+
+@media screen and (min-width: 750px) and (max-width:1000px){
+
+
+    nav{
+    
+            width: 80%;
+            display: flex;
+            justify-content: center;
+           
+            
+     
+    }
+    nav ul{
+    
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        text-transform: uppercase;
+     
+        
+    }
+    
+    ul li a {
+
+        font-size: 13px;
+    }
+    
+    
+    ul li a:hover {
+    
+        text-decoration: none;
+        color: rgb(236, 91, 72);
+        letter-spacing: 1pt;
+        font-family: 'Montserrat', sans-serif;
+        transition: 0.5s;
+    }
+ 
+    
+.logotype{
+        display: flex;
+        align-items: center;
+        width: 20%;
+        padding-left: 40px;
+        padding-top: 10px;
+    }
+.logo{
+
+        width: 100%;
+    }
+
+
+}
+
+/*_____________LE RESTAURANT ____________*/
+    
+#lieu{
+    
+    height: 110vh;
+}
+section#restaurant{
+   
+    width: 80%;
+    padding-top: 90px;
+    padding-bottom: 0px;
+    margin: auto;
     display: flex;
-    flex-direction: column;
-  }
+    justify-content: space-between;
+    align-items: center;
+}
 
-  }
-  
+section#restaurant.cave {
+
+    padding-bottom: 90px;
+    padding-top: 0px;
+}
+
+p.texte{
+
+    padding: 30px;
+}
+
+
+.chef{
+    
+width: 50%;
+
+}
+
+
+/*____________ CARTE & MENU ____________*/
+
+     /*____________ CARTE & MENU ____________*/
+
+        
+     .pdf{
+        display: flex;
+        height: 70%;
+        width: 100%;
+        background: black;
+    }
+
+    
+    .color{
+        width: 30vh;
+    }
+    
+    
+
+
+@media screen and (min-width: 500px) and (max-width: 750px){
+
+    header{
+
+        position: absolute ;
+        display: flex;
+        flex-direction: column;
+    }
+   
+   
+ nav ul{
+    
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                list-style: none;
+                text-transform: uppercase;
+             
+                
+            }
+            
+ul li a {
+            
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                letter-spacing: 1pt;
+                font-family: 'Montserrat', sans-serif;
+                transition: 0.5s;
+                padding: 90px;
+                font-size: 10px;
+ }
+            
+            
+        
+.logotype{
+
+        display: flex;
+        justify-content: center;
+        width: 70%;
+        padding: 0px;
+}
+
+
+/*_____________LE RESTAURANT ____________*/
+        
+#lieu{
+        
+            height: 130vh;
+        }
+section#restaurant{
+           
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+div.lesaintgeorges{
+
+    padding: 30px;
+}
+.chef{
+            
+        width: 70%;
+        padding: 10px;
+            
+}
+        
+
+        /*____________ CARTE & MENU ____________*/
+
+        
+        .pdf{
+            display: flex;
+            height: 65%;
+            width: 100%;
+            background: black;
+        }
+    
+        
+        .color{
+            width: 20vh;
+        }
+        
+        
+        
+        /*____________ Réserver ____________*/
+        
+        .animation{
+            width: 100%;
+        }
+        
+        .reservation{
+            width: 100%;
+            height: 300px;
+            background-color: rgb(248, 242, 233);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .reservation button{
+        
+        
+            width: 260px;
+            margin-top: 50px;
+            padding: 19px;
+            margin-bottom: -20px;
+            background-color: rgb(255, 212, 118);
+            border: 0;
+            font-family: 'Cormorant Garamond', serif;
+            text-transform: uppercase;
+            font-size: 15px;
+            transition: 1s;
+        }
+        
+        .reservation p{
+        
+            text-align: center;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        
+        
+        
+        /*____________ galerie ____________*/
+        
+        #gallery{
+        
+            width: 70%;
+            padding-top: 80px;
+            padding-bottom: 30px;
+        
+        
+        }
+        
+        /*____________ Témoignages ____________*/
+        
+        
+        
+          .temoignage{
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        
+        .paul{
+        
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+        
+        
+        /*____________ CONTACT____________*/
+        
+        .contact{
+        
+            width: 90%;
+            flex-direction: column;
+        
+        
+        }
+        
+        .adresse{
+        
+            padding: 20px;
+        }
+    }
+        
+
+
+   
+@media screen and (max-width: 500px){
+
+header{
+
+    position: absolute ;
+    flex-direction: column;
+
+}
+        nav ul{
+
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+            text-transform: uppercase;
+         
+}
+        
+ul li a {
+        
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            letter-spacing: 1pt;
+            font-family: 'Montserrat', sans-serif;
+            transition: 0.5s;
+            padding: 10px;
+        }
+
+.logotype{
+
+            width: 200px;
+        }
+        
+             
+
+section.accueil{
+            height: 100vh;
+            display: flex;
+            background-image: url(ressources/table-repas.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        
+
+
+/*_____________LE RESTAURANT ____________*/
+            
+#lieu{
+            
+                height: 120vh;
+}
+
+section#restaurant{
+               
+                width: 80%;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            
+.cave {
+            
+                padding-bottom: 90px;
+            }
+.chef{
+                
+            width: 70%;
+            padding: 10px;
+                
+            }
+            
+ h2{
+            
+                padding-top: 30px;
+            }
+            
+            /*____________ CARTE & MENU ____________*/
+            
+ section#carte{
+            
+                height: 100%;
+                width: 100%;
+            }
+            
+ .pdf{
+                display: flex;
+                flex-direction: column;
+                height: 65%;
+                width: 100%;
+                padding: 30px;
+                background: black;
+                background-image: url(./ressources/plat-colore.jpg);
+                background-size: cover;
+                background-attachment: fixed;
+            }
+            
+ .color{
+                width: 0;
+                visibility: hidden;
+            }
+            
+            
+            
+            /*____________ Réserver ____________*/
+            
+.animation{
+                width: 100%;
+            }
+            
+.reservation{
+                width: 100%;
+                height: 300px;
+                background-color: rgb(248, 242, 233);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            
+.reservation button{
+            
+            
+                width: 260px;
+                margin-top: 50px;
+                padding: 19px;
+                margin-bottom: -20px;
+                background-color: rgb(255, 212, 118);
+                border: 0;
+                font-family: 'Cormorant Garamond', serif;
+                text-transform: uppercase;
+                font-size: 15px;
+                transition: 1s;
+            }
+            
+.reservation p{
+            
+                text-align: center;
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+            
+            
+            
+/*____________ galerie ____________*/
+            
+ #gallery{
+            
+                width: 70%;
+                padding-top: 30px;
+                padding-bottom: 30px;
+            
+            
+            }
+            
+ /*____________ Témoignages ____________*/
+            
+            
+            
+.temoignage{
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px;
+            }
+            
+.paul{
+            
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 30px;
+            }
+            
+            
+/*____________ CONTACT____________*/
+            
+.contact{
+            
+                width: 90%;
+                flex-direction: column;
+            
+            
+            }
+            
+.adresse{
+            
+                padding: 20px;
+            }
+            
+            
+div.adresse p {
+            
+                padding: 10px;
+            }
+            }

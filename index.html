@@ -5,20 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Le Saint-Georges</title>
-    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header>
+        <div class="logotype">
+            <a href="../index.html"><img class="logo" src="./logoblancor.png" alt="Logo"></a>
+        </div>
         <nav>
             <ul>
-                <li><a href="#restaurant">Le restaurant</a></li>
-                <li><a href="#carte">Carte & Menu</a></li>
-                <li><a href="#">Actualité</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#lieu">Le restaurant</a></li>
+                <li><a href="/pages/carte.html">Carte & Menu</a></li>
+                <li><a href="#gallery">Galerie Photos</a></li>
+                <li><a href="/pages/actualites.html">Actualités</a></li>
+                <li><a href="/pages/reservation.html">Réservation</a></li>
             </ul>
         </nav>
     </header>
@@ -28,59 +33,80 @@
             <h1>Le Saint-Georges</h1>
             <p>Restaurant gastronomique</p>
         </div>
-
     </section>
 
 
-    <section id="restaurant">
-        <div class="lesaintgeorges">
-            <h2>Le Saint-Georges</h2>
-            <p class="texte">
+    <section id="lieu">
 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel neque quis lacus mollis aliquam. In
-                mollis enim fermentum mi egestas accumsan ut eu risus. Nunc imperdiet at quam vel imperdiet. Vestibulum
-                finibus vel massa at volutpat. In vitae tellus dui. Nulla tincidunt semper lacus, non pulvinar ligula
-                blandit quis. Sed facilisis purus a tincidunt sagittis. Proin lacus dui, sollicitudin at diam eget,
-                efficitur viverra purus. Integer tempus eget risus vel mollis. Cras sit amet bibendum magna.</p>
+        <section id="restaurant">
+            <div class="lesaintgeorges">
+                <div data-aos="fade-right">
+                    <h2>Le Saint-Georges</h2>
+
+                    <p class="texte">
+                        Niché au cœur du village d’art de Saint-Juire-Champgillon, le restaurant le Saint-Georges vous
+                        accueille dans un cadre contemporain et agréable. Vous pourrez y déguster la cuisine de Willy
+                        Lefay.
+
+                        Ce chef talentueux dont le maître mot est l’innovation mais dans le respect des traditions,
+                        remet en avant des produits oubliés, pour le plaisir des anciens comme des plus jeunes.</p>
+                </div>
+            </div>
+
+            <img class="chef" src="ressources/table-repas.jpg" alt="">
+        </section>
+        <div class="reserver">
+            <button><a class="reservez" href="../pages/reservation.html">Je réserve une table !</a></button>
         </div>
+        <section id="restaurant" class="cave">
 
-        <img class="chef" src="ressources/table-repas.jpg" alt="">
+            <img class="chef" src="ressources/vin.jpg" alt="">
+            <div class="lesaintgeorges">
+                <div data-aos="fade-left">
+                    <h2>La cave à vins</h2>
+
+                    <p class="texte">
+                        le Saint Georges, c’est aussi un bistrot à vin, où l’on vient déguster un vin et passer un bon
+                        moment , jambon et cochonnailles à la coupe. Entre amis installez vous autour d’une barrique et
+                        laissez vous guider.
+
+                </div>
+            </div>
+        </section>
     </section>
-
 
 
     <section id="carte">
+        <div class="pdf">
 
-        <img class="color" src="ressources/plat-colore.jpg" alt="">
-        <div class="menu">
-            <button class="menucarte">Découvrir la carte & Menu</button>
+            <img class="color" src="ressources/plat-colore.jpg" alt="">
+            <img class="color" src="ressources/plat3.jpg" alt="">
+
+            <div class="menu">
+                <button><a class="cartemenu" href="../pages/carte.html">Carte & Menu</a></button>
+            </div>
         </div>
 
+        <div class="animation" data-aos="fade-up" data-aos-duration="2000">
+            <section class="reservation">
+                <p> Cuisine gastronomique et ambiance conviviale
+                    vous attendent au saint-georges ! </p>
+                <button><a class="reserver" href="../pages/reservation.html">Je réserve une table !</a></button>
+            </section>
     </section>
 
-<section class="reservation">
 
 
-<hr color="blue">
-<button class="reserver">Je réserve une table</button>
-
-
-
-</section>
-
-    <section class="gallery">
-        <button class="image">Galerie photo</button>
+    <section id="gallery">
+        <h2 class="lagalerie">Galerie photo</h2>
         <ul class="galerie">
             <li><img src="ressources/plat3.jpg" alt="placeholder"></li>
-            <li class="landscape"><img src="ressources/table-repas.jpg" alt="placeholder"></li>
-            <li class="landscape"><img src="ressources/table.jpg" alt="placeholder"></li>
-            <li class="landscape"><img src="ressources/plat-colore.jpg" alt="placeholder"></li>
-            <li><img src="http://placehold.it/200x300" alt="placeholder"></li>
             <li><img src="ressources/table-repas.jpg" alt="placeholder"></li>
-            <li class="landscape"><img src="ressources/assiette.png" alt="placeholder"></li>
-            <li><img src="ressources/plat.jpg" alt="placeholder"></li>
-            <li><img src="ressources/plat2.jpg" alt="placeholder"></li>
+            <li><img src="ressources/table.jpg" alt="placeholder"></li>
+            <li><img src="ressources/plat-colore.jpg" alt="placeholder"></li>
+            <li><img src="ressources/table-repas.jpg" alt="placeholder"></li>
         </ul>
+        <button><a class="reserver" href="../pages/reservation.html">Je réserve une table !</a></button>
     </section>
 
 
@@ -88,24 +114,56 @@
 
     <section class="avis">
         <H1>Témoignages</H1>
-        <div class="paul">
-        <div class="temoignage">
-            <h3>Paul Perucaud</h3>
-            <p>Belle étape. Un vrai pub, un vrai patron anglais, très chaleureux. De vrais saveurs anglaises : superbe fish and chips, très bons hamburger. Très copieux. Prix raisonnables. Ça va devenir une étape régulière sur ma route des vacances.</p>
-        </div>
-        <div class="temoignage">
-            <h3>Paul Perucaud</h3>
-            <p>Belle étape. Un vrai pub, un vrai patron anglais, très chaleureux. De vrais saveurs anglaises : superbe fish and chips, très bons hamburger. Très copieux. Prix raisonnables. Ça va devenir une étape régulière sur ma route des vacances.</p>
-        </div>
-    </div>
+        <div class="animation" data-aos="fade-up" data-aos-duration="2000">
+            <div class="paul">
+                <div class="temoignage">
+                    <h3>Paul Perucaud</h3>
+                    <p>Belle étape. Un vrai pub, un vrai patron anglais, très chaleureux. De vrais saveurs anglaises :
+                        superbe fish and chips, très bons hamburger. Très copieux. Prix raisonnables. Ça va devenir une
+                        étape régulière sur ma route des vacances.</p>
+                </div>
+                <div class="temoignage">
+                    <h3>Paul Perucaud</h3>
+                    <p>Belle étape. Un vrai pub, un vrai patron anglais, très chaleureux. De vrais saveurs anglaises :
+                        superbe fish and chips, très bons hamburger. Très copieux. Prix raisonnables. Ça va devenir une
+                        étape régulière sur ma route des vacances.</p>
+                </div>
+            </div>
     </section>
 
-    <footer>Le Saint-Georges -  2020 </footer>
 
+    <section class="contact">
+        <div class="adresse">
+            <h4>Adresse</h4>
+            <p>11 Place de la Mairie, <br> Saint-Juire-Champgillon France</p>
+        </div>
+        <div class="adresse">
+            <h4>Adresse</h4>
+            <p>lesaintgeorges3@wanadoo.fr</p>
+        </div>
+        <div class="adresse">
+            <h4>Adresse</h4>
+            <p>02 51 27 86 91</p>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <footer>Le Saint-Georges - 2020 </footer>
 
 
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            { duration: 1700 }
+        );
+    </script>
 
 </body>
 

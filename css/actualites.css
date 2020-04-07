@@ -1,0 +1,318 @@
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  opacity: 0.9;
+  position: fixed;
+  position: relative;
+  background: black;
+  z-index: 8;
+
+
+  
+}
+
+nav{
+
+      width: 100%;
+     
+      
+
+}
+nav ul{
+
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  text-transform: uppercase;
+
+  
+}
+
+ul li a {
+
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  letter-spacing: 1pt;
+  font-family: 'Montserrat', sans-serif;
+  transition: 0.5s;
+}
+
+
+ul li a:hover {
+
+  text-decoration: none;
+  color: rgb(236, 91, 72);
+  letter-spacing: 1pt;
+  font-family: 'Montserrat', sans-serif;
+  transition: 0.5s;
+}
+
+.logotype{
+
+  padding-left: 80px;
+  padding-top: 10px;
+  width: 40%;
+  height: 90px;
+}
+.logo{
+
+  width: 55%;
+}
+
+section.accueil{
+  height: 100vh;
+  display: flex;
+  background-image: url(ressources/accueil.png);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+ /*____________ ACTUALITE____________*/
+
+.actualites{
+
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+  font-family: 'cormorant';
+}
+
+
+.row{
+
+  height: 70vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+.column {
+  
+  display: flex;
+  justify-content: center;
+  float: left;
+  width: 25%;
+  height: 70%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+img.actu{
+
+  width: 100%;
+}
+
+h2{
+
+  font-family: 'Montserrat', sans-serif;
+}
+
+p{
+  color: grey;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  padding: 5px;
+  color: black;
+}
+
+
+
+/*____________footer____________*/
+
+footer{
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2pt;
+  padding: 10px;
+  background: rgb(61, 57, 57);
+  color: white;
+}
+
+
+
+@media screen and (min-width: 750px) and (max-width:1000px){
+
+
+    
+  nav{
+  
+          width: 80%;
+          display: flex;
+          justify-content: center;
+         
+          
+   
+  }
+  nav ul{
+  
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+      text-transform: uppercase;
+   
+      
+  }
+  
+  ul li a {
+
+      font-size: 13px;
+  }
+  
+  
+  ul li a:hover {
+  
+      text-decoration: none;
+      color: rgb(236, 91, 72);
+      letter-spacing: 1pt;
+      font-family: 'Montserrat', sans-serif;
+      transition: 0.5s;
+  }
+
+  
+.logotype{
+      display: flex;
+      align-items: center;
+      width: 20%;
+      padding-left: 40px;
+      padding-top: 10px;
+  }
+.logo{
+
+      width: 100%;
+  }
+}
+
+
+@media screen and (min-width: 750px) and (max-width:1290px){
+
+  header{
+
+    position: relative ;
+    flex-direction: column;
+
+}
+    
+  nav{
+  
+          width: 80%;
+          display: flex;
+          justify-content: center;
+         
+          
+   
+  }
+  nav ul{
+  
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+      text-transform: uppercase;
+   
+      
+  }
+  
+  ul li a {
+
+      font-size: 13px;
+  }
+  
+  
+  ul li a:hover {
+  
+      text-decoration: none;
+      color: rgb(236, 91, 72);
+      letter-spacing: 1pt;
+      font-family: 'Montserrat', sans-serif;
+      transition: 0.5s;
+  }
+
+  
+.logotype{
+      display: flex;
+      align-items: center;
+      width: 40%;
+      padding-left: 40px;
+      padding-top: 10px;
+  }
+.logo{
+
+      width: 200px;
+  }
+}
+
+
+@media screen and (max-width: 500px){
+
+  header{
+  
+      position: absolute ;
+      flex-direction: column;
+  
+  }
+          nav ul{
+  
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: center;
+              list-style: none;
+              text-transform: uppercase;
+           
+  }
+          
+  ul li a {
+          
+              text-decoration: none;
+              color: rgb(255, 255, 255);
+              letter-spacing: 1pt;
+              font-family: 'Montserrat', sans-serif;
+              transition: 0.5s;
+              padding: 10px;
+              font-size: 12px;
+          }
+          
+
+  .logotype{
+  
+      width: 200px;
+  }
+} 

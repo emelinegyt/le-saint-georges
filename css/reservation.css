@@ -1,0 +1,484 @@
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  opacity: 0.9;
+  position: fixed;
+  background: black;
+  z-index: 8;
+
+
+  
+}
+
+nav{
+
+      width: 100%;
+     
+      
+
+}
+nav ul{
+
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  text-transform: uppercase;
+
+  
+}
+
+ul li a {
+
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  letter-spacing: 1pt;
+  font-family: 'Montserrat', sans-serif;
+  transition: 0.5s;
+}
+
+
+ul li a:hover {
+
+  text-decoration: none;
+  color: rgb(236, 91, 72);
+  letter-spacing: 1pt;
+  font-family: 'Montserrat', sans-serif;
+  transition: 0.5s;
+}
+
+.logotype{
+
+  padding-left: 80px;
+  padding-top: 10px;
+  width: 40%;
+  height: 90px;
+}
+.logo{
+
+  width: 55%;
+}
+
+section.accueil{
+  height: 100vh;
+  display: flex;
+  background-image: url(ressources/accueil.png);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+ /*____________ RESERVATION____________*/
+
+.reservation{
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: black;
+}
+
+div.formulaire{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.unetable{
+
+  width: 60%;
+  padding-top: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+
+}
+
+h2{
+
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color: rgb(247, 163, 107);
+}
+
+p{
+
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 20px;
+  text-align: justify;
+}
+
+
+
+
+.formulaire {
+    margin:10px auto;
+    width: 550px;
+    padding: 50px 12px 10px 20px;
+    font: 14px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  }
+  .formulaire td {
+    padding: 0;
+    display: block;
+    list-style: none;
+    margin: 10px 0 0 0;
+  }
+  .formulaire label{
+    margin:0 0 3px 0;
+    padding:0px;
+    display:block;
+    font-weight: bold;
+  }
+  .formulaire .required{
+    color:red;
+  }
+  .formulaire-style input, .formulaire input{
+    background: #ffffff;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    color: #fff;
+  }
+
+  .formulaire .field-textarea{
+    height: 100px;
+  }
+  .formulaire input[type=text], 
+  .formulaire input[type=email],
+  textarea{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border:1px solid #BEBEBE;
+    padding: 7px;
+    margin:0px;
+    outline: none;  
+  }
+  .formulaire .long{
+    width: 100%;
+  }
+
+  .error{
+    color: #D8000C;
+    background-color: rgb(214, 196, 196);
+}
+
+
+
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2pt;
+    padding: 10px;
+    background: rgb(61, 57, 57);
+    color: white;
+}
+
+ /*____________ CONTACT____________*/
+
+ .contact{
+
+  background-color: rgb(247, 234, 210);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 230px;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.adresse{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+
+div.adresse p {
+    text-align: center;
+    font-size: 14px;
+    text-transform: initial;
+    padding: 20px;
+}
+
+  @media screen and (min-width: 750px) and (max-width:1290px){
+
+
+    
+    nav{
+    
+            width: 80%;
+            display: flex;
+            justify-content: center;
+           
+            
+     
+    }
+    nav ul{
+    
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        text-transform: uppercase;
+     
+        
+    }
+    
+    ul li a {
+
+        font-size: 13px;
+    }
+    
+    
+    ul li a:hover {
+    
+        text-decoration: none;
+        color: rgb(236, 91, 72);
+        letter-spacing: 1pt;
+        font-family: 'Montserrat', sans-serif;
+        transition: 0.5s;
+    }
+ 
+    
+.logotype{
+        display: flex;
+        align-items: center;
+        width: 20%;
+        padding-left: 40px;
+        padding-top: 10px;
+    }
+.logo{
+
+        width: 100%;
+    }
+
+
+/*____________ RESERVATION____________*/
+
+.reservation{
+
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+}
+div.unetable{
+
+  padding: 0px;
+}
+div.formulaire{
+
+  width: 90%;
+}
+
+.form{
+
+  width: 80%;
+}
+/*____________ CONTACT____________*/
+
+ .contact{
+
+  background-color: rgb(247, 234, 210);
+  padding: 0;
+  margin-top: 40px;
+  height: 250px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+}
+
+@media screen and (min-width: 500px) and (max-width: 750px){
+
+  header{
+
+      position: absolute ;
+      display: flex;
+      flex-direction: column;
+  }
+ 
+ 
+nav ul{
+  
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: center;
+              list-style: none;
+              text-transform: uppercase;
+           
+              
+          }
+          
+ul li a {
+          
+              text-decoration: none;
+              color: rgb(255, 255, 255);
+              letter-spacing: 1pt;
+              font-family: 'Montserrat', sans-serif;
+              transition: 0.5s;
+              padding: 90px;
+              font-size: 10px;
+}
+          
+          
+      
+.logotype{
+
+      display: flex;
+      justify-content: center;
+      width: 70%;        
+      padding: 0px;
+}
+
+.formulaire{
+
+  padding: 0px;
+  width: 100%;
+}
+
+.unetable{
+
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.reservation{
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  padding-top: 400px;
+}
+
+form{
+
+  display: flex;
+  width: 130%;
+
+}
+
+.contact{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+}
+
+}
+
+
+
+@media screen and (max-width:500px){
+
+  header{
+
+    position: absolute ;
+    flex-direction: column;
+    position: relative;
+
+}
+        nav ul{
+
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+            text-transform: uppercase;
+         
+}
+        
+ul li a {
+        
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            letter-spacing: 1pt;
+            font-family: 'Montserrat', sans-serif;
+            transition: 0.5s;
+            padding: 10px;
+        }
+        
+
+section.accueil{
+            height: 100vh;
+            display: flex;
+            background-image: url(ressources/accueil.png);
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        
+.logotype{
+
+    width: 200px;
+}
+
+
+.formulaire{
+
+  padding: 0px;
+  width: 100%;
+}
+
+.unetable{
+
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.reservation{
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  padding-top: 400px;
+}
+
+form{
+
+  display: flex;
+  width: 130%;
+
+}
+
+.contact{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+}
+
+}
