@@ -1029,15 +1029,21 @@ header{
     flex-direction: column;
 
 }
-        nav ul{
+
+
+nav{
+
+    padding: 10px;
+
+}
+
+
+nav ul{
 
             width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            align-items: center;
-            list-style: none;
-            text-transform: uppercase;
          
 }
         
@@ -1048,18 +1054,27 @@ ul li a {
             letter-spacing: 1pt;
             font-family: 'Montserrat', sans-serif;
             transition: 0.5s;
-            padding: 10px;
+            font-size: 12px;
         }
 
 .logotype{
 
-            width: 200px;
+            width: 120%;
+            margin: auto;
         }
         
-             
+        .logo{
 
+            width: 60%;
+          }
+                      
+i{
+
+    padding-top: 20px;
+}
 section.accueil{
-            height: 100%;
+
+            width: 100%;
             display: flex;
             background-image: url(ressources/table-repas.jpg);
             background-attachment: fixed;
@@ -1069,7 +1084,7 @@ section.accueil{
 /*____________ ACCUEIL ____________*/
 
 .presentation{
-    width: 100vh;
+    width: 80vh;
     height: 75vh;
     color: rgb(255, 255, 255);
     display: flex;
@@ -1099,21 +1114,17 @@ p{
 
 
 
-
-
-
-
 /*_____________LE RESTAURANT ____________*/
             
 #lieu{
             
-                height: 130vh;
+                height: 120vh;
                 width: 100%;
 }
 
 section#restaurant{
                
-                width: 80%;
+                width: 90%;
                 margin: auto;
                 display: flex;
                 flex-direction: column;
@@ -1123,20 +1134,20 @@ section#restaurant{
             
             
 .cave {
-            
-                padding-bottom: 90px;
+       
+            padding: 0px;
             }
 .chef{
                 
-            width: 70%;
+            width: 100%;
             padding: 10px;
                 
             }
             
  h2{
             
-                padding-top: 30px;
-            }
+    padding-top: 20px;
+}
 
  p.texte{
 
