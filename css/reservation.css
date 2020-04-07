@@ -151,11 +151,11 @@ p{
   .formulaire .required{
     color:red;
   }
-  .formulaire-style input, .formulaire input{
-    background: #ffffff;
+  .formulaire-style input{
+    background: #f5b274;
     padding: 8px 15px 8px 15px;
     border: none;
-    color: #fff;
+    color: rgb(26, 26, 26);
   }
 
   .formulaire .field-textarea{

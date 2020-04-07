@@ -404,7 +404,7 @@ ul li a {
 
   {
 
-    width: 90%;
+    width: 60%;
     padding-top: 240px;
   }
 
@@ -443,16 +443,120 @@ div.adresse p {
 
 
 
+@media screen and (min-width: 750px) and (max-width:1000px){
+
+
+    nav{
+    
+            width: 80%;
+            display: flex;
+            justify-content: center;
+           
+            
+     
+    }
+    nav ul{
+    
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        text-transform: uppercase;
+     
+        
+    }
+    
+    ul li a {
+
+        font-size: 13px;
+    }
+    
+    
+    ul li a:hover {
+    
+        text-decoration: none;
+        color: rgb(236, 91, 72);
+        letter-spacing: 1pt;
+        font-family: 'Montserrat', sans-serif;
+        transition: 0.5s;
+    }
+ 
+    
+.logotype{
+        display: flex;
+        align-items: center;
+        width: 20%;
+        padding-left: 40px;
+        padding-top: 10px;
+    }
+.logo{
+
+        width: 100%;
+    }
+}
 
 
 
+
+
+@media screen and (min-width: 500px) and (max-width: 750px){
+
+    header{
+
+        position: absolute ;
+        display: flex;
+        flex-direction: column;
+    }
+   
+   
+ nav ul{
+    
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                list-style: none;
+                text-transform: uppercase;
+             
+                
+            }
+            
+ul li a {
+            
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                letter-spacing: 1pt;
+                font-family: 'Montserrat', sans-serif;
+                transition: 0.5s;
+                padding: 90px;
+                font-size: 10px;
+ }
+            
+            
+        
+.logotype{
+
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+        padding: 0px;
+}
+
+img.logo{
+
+        width: 250px;
+}
+}
 
 
 @media screen and (max-width: 500px){
 
     header{
-    
-        position: absolute ;
+        
+        position: relative ;
         flex-direction: column;
     
     }
@@ -476,6 +580,38 @@ div.adresse p {
                 font-family: 'Montserrat', sans-serif;
                 transition: 0.5s;
                 padding: 10px;
+                font-size: 10px;
+            }
+    
+    .logotype{
+    
+                width: 400px;
             }
 
-        }
+  /*____________ carte____________*/
+
+  .carte{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+img.menu{
+
+    width: 300px;
+}
+
+
+  /*____________footer____________*/
+
+footer{
+
+    width: 100%;
+}
+
+        }  

@@ -60,6 +60,15 @@ ul li a:hover {
     transition: 0.5s;
 }
 
+i{
+
+    color: white;
+    font-size: 25px;
+    padding: 0px;
+}
+
+
+
 .logotype{
 
     padding-left: 50px;
@@ -114,8 +123,12 @@ p{
 /*_____________LE RESTAURANT ____________*/
 
 #lieu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    width: 80%;
+    width: 70%;
     margin: auto;
     height: 100vh;
 }
@@ -124,7 +137,6 @@ p{
 
 
         width: 80%;
-        margin-top: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -367,40 +379,7 @@ a.reserver{
     height: 100%;
   }
 
-  /*____________ Bouton réserver ____________*/
-
-#gallery button{
-
-
-    width: 260px;
-    padding: 19px;
-    margin-bottom: -50px;
-    background-color: rgb(255, 212, 118);
-    border: 0;
-    font-family: 'Cormorant Garamond', serif;
-    text-transform: uppercase;
-    font-size: 15px;
-    transition: 1s;
-    z-index: 3;
-    
-}
-
-a.reserver{
-
-    width: 260px;
-    text-decoration: none;
-    color: rgb(41, 41, 41);
-}
-
-
-#gallery button:hover{
-
-        transition: 1s;
-        transform: scale(1.1);
-        text-decoration: none;
-      
-      }
-
+ 
 
   /*____________ Témoignages ____________*/
 
@@ -452,10 +431,44 @@ section.avis div p{
 
 }
 
+ /*____________ Bouton réserver ____________*/
 
+.avis button{
 
+   
+    width: 260px;
+    padding: 19px;
+    margin-bottom: -20px;
+    background-color: rgb(255, 212, 118);
+    border: 0;
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: 1s;
+    z-index: 3;
+    
+}
 
+a.reserver{
 
+    width: 260px;
+    text-decoration: none;
+    color: rgb(41, 41, 41);
+}
+
+.bouton{
+
+    display: flex;
+    justify-content: center;
+    
+}
+.bouton button:hover{
+
+        transition: 1s;
+        transform: scale(1.1);
+        text-decoration: none;
+      
+      }
 
 
   /*____________ CONTACT____________*/
@@ -463,6 +476,7 @@ section.avis div p{
 .contact{
 
     width: 70%;
+    height: 200px;
     margin: auto;
     display: flex;
     justify-content: space-around;
@@ -508,7 +522,7 @@ footer{
 
 #lieu{
 
-     height: 100vh;
+     height: 110vh;
      padding-top: 70px;
 
 }
@@ -703,14 +717,12 @@ section#restaurant.cave {
         width: 100%;
     }
 
-
-}
-
 /*_____________LE RESTAURANT ____________*/
     
 #lieu{
     
-    height: 110vh;
+    height: 600px;
+    width: 100%;
 }
 section#restaurant{
    
@@ -741,25 +753,50 @@ width: 50%;
 
 }
 
-
 /*____________ CARTE & MENU ____________*/
 
-     /*____________ CARTE & MENU ____________*/
-
         
-     .pdf{
-        display: flex;
-        height: 70%;
-        width: 100%;
-        background: black;
-    }
+.pdf{
+    display: flex;
+    height: 30%;
+    width: 100%;
+    background: black;
+}
 
-    
-    .color{
-        width: 30vh;
+
+.color{
+    width: 24vh;
+}
+
+
+/*____________ Réservation ____________*/
+
+
+.reservation p{
+
+    text-align: center;
+    font-size: 13px;
+}
+
+        /*____________ CONTACT____________*/
+        
+        .contact{
+        
+            width: 90%;
+            height: 300px;
+            flex-wrap: wrap;
+            padding-top: 40px;
+        
+        
+        }
+        
+        .adresse{
+        
+            padding: 20px;
+        }
     }
-    
-    
+        
+
 
 
 @media screen and (min-width: 500px) and (max-width: 750px){
@@ -802,10 +839,30 @@ ul li a {
 
         display: flex;
         justify-content: center;
-        width: 70%;
+        width: 100%;
+        margin: auto;
         padding: 0px;
 }
 
+img.logo{
+
+        width: 250px;
+}
+/*____________ ACCUEIL ____________*/
+
+.presentation{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-left: 0px;
+    
+}
+
+h1{
+
+    font-size: 30pt;
+    font-family: 'Cormorant Garamond', serif;
+}
 
 /*_____________LE RESTAURANT ____________*/
         
@@ -835,7 +892,7 @@ div.lesaintgeorges{
 }
         
 
-        /*____________ CARTE & MENU ____________*/
+/*____________ CARTE & MENU ____________*/
 
         
         .pdf{
@@ -930,6 +987,7 @@ div.lesaintgeorges{
         .contact{
         
             width: 90%;
+            height: 500px;
             flex-direction: column;
         
         
@@ -947,8 +1005,8 @@ div.lesaintgeorges{
 @media screen and (max-width: 500px){
 
 header{
-
-    position: absolute ;
+    
+    position: relative ;
     flex-direction: column;
 
 }
@@ -982,20 +1040,56 @@ ul li a {
              
 
 section.accueil{
-            height: 100vh;
+            height: 100%;
             display: flex;
             background-image: url(ressources/table-repas.jpg);
             background-attachment: fixed;
             background-size: cover;
         }
-        
+
+/*____________ ACCUEIL ____________*/
+
+.presentation{
+    width: 100vh;
+    height: 75vh;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 0px;
+    
+}
+
+h1{
+
+    text-transform: uppercase;
+    letter-spacing: 2pt;
+    font-size: 30pt;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+p{
+
+
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
 
 
 /*_____________LE RESTAURANT ____________*/
             
 #lieu{
             
-                height: 120vh;
+                height: 130vh;
+                width: 100%;
 }
 
 section#restaurant{
@@ -1024,8 +1118,16 @@ section#restaurant{
             
                 padding-top: 30px;
             }
-            
-            /*____________ CARTE & MENU ____________*/
+
+ p.texte{
+
+    padding: 20px;
+ }
+
+
+
+
+/*____________ CARTE & MENU ____________*/
             
  section#carte{
             
@@ -1103,33 +1205,55 @@ section#restaurant{
             
             }
             
- /*____________ Témoignages ____________*/
-            
-            
-            
-.temoignage{
-                width: 80%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: space-between;
-                padding: 10px;
-            }
-            
-.paul{
-            
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 30px;
-            }
-            
-            
+     
+        /*____________ Témoignages ____________*/
+        
+.avis{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        
+    }
+  
+section.avis h1{
+
+    font-size: 20px;
+    padding-top: 100px;
+}
+div.temoignage{
+
+    width: 90%;
+}
+
+        .paul{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+        }
+   
+
+/*____________ Bouton réserver ____________*/
+
+
+.bouton{
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+    
+}
+
 /*____________ CONTACT____________*/
             
 .contact{
             
                 width: 90%;
+                height: 350px;
+                padding-top: 20px;
                 flex-direction: column;
             
             
