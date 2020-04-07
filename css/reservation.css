@@ -7,6 +7,7 @@
     box-sizing: border-box;
 }
 
+
 header{
   width: 100%;
   display: flex;
@@ -65,19 +66,26 @@ i{
   color: white;
   font-size: 25px;
   padding: 0px;
+  transition: 0.7s;
+}
+
+i:hover{
+
+  color: rgb(177, 158, 124);
+  transition: 0.7s;
 }
 
 
 .logotype{
 
-  padding-left: 80px;
+  padding-left: 50px;
   padding-top: 10px;
-  width: 40%;
+  width:35%;
   height: 90px;
 }
 .logo{
 
-  width: 55%;
+  width: 60%;
 }
 
 section.accueil{
@@ -190,20 +198,19 @@ p{
 }
 
 
+footer a {
 
-
-
-footer{
-    display: flex;
-    justify-content: center;
-    text-transform: uppercase;
-    font-size: 12px;
-    letter-spacing: 2pt;
-    padding: 10px;
-    background: rgb(61, 57, 57);
-    color: white;
+  list-style: none;
+  color: white;
+  text-decoration: none;
+  transition: 0.7s;
 }
 
+footer a:hover{
+
+  color: rgb(199, 177, 136);
+  transition: 0.7s;
+}
  /*____________ CONTACT____________*/
 
  .contact{

@@ -7,6 +7,7 @@
     box-sizing: border-box;
 }
 
+
 header{
   width: 100%;
   display: flex;
@@ -15,7 +16,6 @@ header{
   padding: 10px;
   opacity: 0.9;
   position: fixed;
-  position: relative;
   background: black;
   z-index: 8;
 
@@ -61,25 +61,34 @@ ul li a:hover {
   transition: 0.5s;
 }
 
+i{
+
+  color: white;
+  font-size: 25px;
+  padding: 0px;
+  transition: 0.7s;
+}
+
+i:hover{
+
+  color: rgb(177, 158, 124);
+  transition: 0.7s;
+}
+
+
 .logotype{
 
-  padding-left: 80px;
+  padding-left: 50px;
   padding-top: 10px;
-  width: 40%;
+  width:35%;
   height: 90px;
 }
 .logo{
 
-  width: 55%;
+  width: 60%;
 }
 
-section.accueil{
-  height: 100vh;
-  display: flex;
-  background-image: url(ressources/accueil.png);
-  background-attachment: fixed;
-  background-size: cover;
-}
+
 
 
  /*____________ ACTUALITE____________*/
@@ -113,6 +122,20 @@ section.accueil{
   padding: 0 8px;
 }
 
+
+footer a {
+
+  list-style: none;
+  color: white;
+  text-decoration: none;
+  transition: 0.7s;
+}
+
+footer a:hover{
+
+  color: rgb(199, 177, 136);
+  transition: 0.7s;
+}
 @media screen and (max-width: 650px) {
   .column {
     width: 100%;

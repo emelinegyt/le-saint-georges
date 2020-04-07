@@ -65,8 +65,14 @@ i{
     color: white;
     font-size: 25px;
     padding: 0px;
+    transition: 0.7s;
 }
 
+i:hover{
+
+    color: rgb(177, 158, 124);
+    transition: 0.7s;
+}
 
 
 .logotype{
@@ -516,6 +522,19 @@ footer{
     color: white;
 }
 
+footer a {
+
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    transition: 0.7s;
+}
+
+footer a:hover{
+
+    color: rgb(199, 177, 136);
+    transition: 0.7s;
+}
 
 @media screen and (min-width:1290px){
 
