@@ -90,8 +90,10 @@ i:hover{
 }
 
 .mentionslegales{
-  padding: 40px;
+
+  padding-top: 140px;
   width: 80%;
+  height: 100%;
   margin: auto;
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
@@ -122,3 +124,216 @@ footer a:hover{
   color: rgb(199, 177, 136);
   transition: 0.7s;
 }
+
+@media screen and (min-width: 1000px) and (max-width:1290px){
+
+
+    
+  nav{
+  
+          width: 80%;
+          display: flex;
+          justify-content: center;
+         
+          
+   
+  }
+  nav ul{
+  
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+      text-transform: uppercase;
+   
+      
+  }
+  
+  ul li a {
+
+      font-size: 13px;
+  }
+  
+  
+  ul li a:hover {
+  
+      text-decoration: none;
+      color: rgb(236, 91, 72);
+      letter-spacing: 1pt;
+      font-family: 'Montserrat', sans-serif;
+      transition: 0.5s;
+  }
+
+  
+.logotype{
+      display: flex;
+      align-items: center;
+      width: 20%;
+      padding-left: 40px;
+      padding-top: 10px;
+  }
+.logo{
+
+      width: 100%;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width:1000px){
+
+
+  nav{
+  
+          width: 80%;
+          display: flex;
+          justify-content: center;
+         
+          
+   
+  }
+  nav ul{
+  
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+      text-transform: uppercase;
+   
+      
+  }
+  
+  ul li a {
+
+      font-size: 13px;
+  }
+  
+  
+  ul li a:hover {
+  
+      text-decoration: none;
+      color: rgb(236, 91, 72);
+      letter-spacing: 1pt;
+      font-family: 'Montserrat', sans-serif;
+      transition: 0.5s;
+  }
+
+  
+.logotype{
+      display: flex;
+      align-items: center;
+      width: 20%;
+      padding-left: 40px;
+      padding-top: 10px;
+  }
+.logo{
+
+      width: 100%;
+  }
+}
+
+
+@media screen and (min-width: 500px) and (max-width: 750px){
+
+  header{
+
+      position: absolute ;
+      display: flex;
+      flex-direction: column;
+  }
+ 
+ 
+nav ul{
+  
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: center;
+              list-style: none;
+              text-transform: uppercase;
+           
+              
+          }
+          
+ul li a {
+          
+              text-decoration: none;
+              color: rgb(255, 255, 255);
+              letter-spacing: 1pt;
+              font-family: 'Montserrat', sans-serif;
+              transition: 0.5s;
+              padding: 90px;
+              font-size: 10px;
+}
+          
+          
+      
+.logotype{
+
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin: auto;
+      padding: 0px;
+}
+
+img.logo{
+
+      width: 250px;
+}
+}
+
+@media screen and (max-width: 500px){
+
+  header{
+      
+      height: 250px;
+      position: relative;
+      flex-direction: column;
+
+  }
+  
+
+  nav{
+  
+      padding: 10px;
+  
+  }
+  
+  
+  nav ul{
+  
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+           
+  }
+          
+  ul li a {
+          
+              text-decoration: none;
+              color: rgb(255, 255, 255);
+              letter-spacing: 1pt;
+              font-family: 'Montserrat', sans-serif;
+              transition: 0.5s;
+              font-size: 12px;
+          }
+  
+.logotype{
+  
+              width: 100%;
+          }
+          
+.logo{
+  
+              width: 60%;
+            }
+
+.mentionslegales{
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+          }

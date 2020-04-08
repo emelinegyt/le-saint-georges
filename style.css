@@ -87,18 +87,20 @@ i:hover{
     width: 60%;
 }
 
+/*____________ ACCUEIL ____________*/
+
 section.accueil{
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-image: url(ressources/repas.jpg);
+    z-index: 1;
     background-attachment: fixed;
     background-size: cover;
 }
 
-
-/*____________ ACCUEIL ____________*/
 
 .presentation{
     width: 100vh;
@@ -127,6 +129,20 @@ p{
     font-family: 'Montserrat', sans-serif;
 }
 
+div.scroll{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    animation: 2s;
+}
+i.fas.fa-chevron-down{
+   
+    color: white;
+    font-size: 30px;
+    padding-top: 800px;
+}
+
 /*_____________LE RESTAURANT ____________*/
 
 #lieu{
@@ -137,7 +153,7 @@ p{
     position: relative;
     width: 70%;
     margin: auto;
-    height: 100vh;
+    height: 100%;
 }
 
 #restaurant{
