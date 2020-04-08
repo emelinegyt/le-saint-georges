@@ -90,7 +90,9 @@ i:hover{
 section.accueil{
     height: 100vh;
     display: flex;
-    background-image: url(ressources/accueil.png);
+    justify-content: center;
+    align-items: center;
+    background-image: url(ressources/repas.jpg);
     background-attachment: fixed;
     background-size: cover;
 }
@@ -104,9 +106,8 @@ section.accueil{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     text-align: center;
-    padding-left: 140px;
     
 }
 
@@ -212,6 +213,7 @@ a.reservez{
     color: rgb(41, 41, 41);
     font-family: 'Cormorant Garamond', serif;
     text-transform: uppercase;
+    font-weight: bold;
     font-size: 15px;
     z-index: 2;
  
@@ -276,16 +278,17 @@ a.cartemenu{
     background: white;
     border: 0;
     font-family: 'Cormorant Garamond', serif;
-    font-size: 13px;
+    font-size: 14px;
     text-transform: uppercase;
     transition: 0.5s;
+    font-weight: bold;
 }
 
 a.cartemenu:hover{
 
-        color: rgb(255, 212, 118);
+
         transform: scale(1.1);
-        transition: 0.5s;
+        transition: 0.7s;
 
     }
 
@@ -320,6 +323,7 @@ a.cartemenu:hover{
     text-transform: uppercase;
     font-size: 15px;
     transition: 1s;
+    font-weight: bold;
     
 }
 
@@ -336,6 +340,7 @@ a.reserver{
         transition: 1s;
         transform: scale(1.1);
         text-decoration: none;
+        font-weight: bold;
       
       }
 
@@ -375,17 +380,19 @@ a.reserver{
     border: 1px solid #ccc;
 
   }
-  .galerie li.landscape {
-    grid-column-end: span 2;
-  }
+
   .galerie li img {
     display: block;
     object-fit: cover;
     width: 100%;
     height: 100%;
   }
-
- 
+  .galerie li img:hover {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
 
   /*____________ Témoignages ____________*/
 
@@ -452,6 +459,7 @@ section.avis div p{
     font-size: 15px;
     transition: 1s;
     z-index: 3;
+    font-weight: bold;
     
 }
 
@@ -1059,8 +1067,7 @@ ul li a {
 
 .logotype{
 
-            width: 120%;
-            margin: auto;
+            width: 100%;
         }
         
         .logo{
@@ -1072,27 +1079,28 @@ i{
 
     padding-top: 20px;
 }
+
+/*____________ ACCUEIL ____________*/
 section.accueil{
 
             width: 100%;
+            height: 450px ;
             display: flex;
-            background-image: url(ressources/table-repas.jpg);
+            background-image: url(ressources/repas.jpg);
             background-attachment: fixed;
             background-size: cover;
         }
 
-/*____________ ACCUEIL ____________*/
+
 
 .presentation{
-    width: 80vh;
-    height: 75vh;
+    width: 100%;
     color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-left: 0px;
     
 }
 
@@ -1139,7 +1147,7 @@ section#restaurant{
             }
 .chef{
                 
-            width: 100%;
+            width: 90%;
             padding: 10px;
                 
             }
@@ -1249,7 +1257,8 @@ section#restaurant{
 section.avis h1{
 
     font-size: 20px;
-    padding-top: 100px;
+    padding-bottom: 20px;
+    padding-top: 0px;
 }
 div.temoignage{
 

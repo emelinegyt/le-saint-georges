@@ -88,21 +88,14 @@ i:hover{
   width: 60%;
 }
 
-section.accueil{
-  height: 100vh;
-  display: flex;
-  background-image: url(ressources/accueil.png);
-  background-attachment: fixed;
-  background-size: cover;
-}
+
 
 
  /*____________ RESERVATION____________*/
 
 .reservation{
   width: 100%;
-  height: 100vh;
-  margin: auto;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -120,12 +113,11 @@ div.formulaire{
 .unetable{
 
   width: 60%;
-  padding-top: 90px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 150px;
+  padding-top: 130px;
 
 }
 
@@ -133,13 +125,13 @@ h2{
 
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
-  color: rgb(247, 163, 107);
+  color: rgb(184, 157, 117);
 }
 
 p{
 
   font-family: 'Montserrat', sans-serif;
-  padding-top: 20px;
+  padding-top: 10px;
   text-align: justify;
 }
 
@@ -168,7 +160,7 @@ p{
     color:red;
   }
   .formulaire-style input{
-    background: #f5b274;
+    background: #b49679;
     padding: 8px 15px 8px 15px;
     border: none;
     color: rgb(26, 26, 26);
@@ -197,6 +189,70 @@ p{
     background-color: rgb(214, 196, 196);
 }
 
+input.bouton{
+
+  color: hsl(0, 0%, 100%);
+  background-color: #474747;
+  width: 140px;
+  padding: 12px;
+  border: 0;
+  font-family: 'Cormorant Garamond', serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  transition: 1s;
+
+
+  
+}
+
+ /*____________ CONTACT____________*/
+
+ .contact{
+
+  background-color: rgb(189, 162, 121);
+  height: 100%;
+  display: flex;
+  margin-right: 90px;
+  flex-direction: column;
+  padding-top: 230px;
+  padding-bottom: 230px;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.adresse{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    color: white;
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+
+div.adresse p {
+    text-align: center;
+    font-size: 14px;
+    text-transform: initial;
+    padding: 20px;
+    color: white;
+}
+
+/*____________ FOOTER___________*/
+footer{
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2pt;
+  padding: 10px;
+  background: rgb(61, 57, 57);
+  color: white;
+}
 
 footer a {
 
@@ -210,35 +266,6 @@ footer a:hover{
 
   color: rgb(199, 177, 136);
   transition: 0.7s;
-}
- /*____________ CONTACT____________*/
-
- .contact{
-
-  background-color: rgb(247, 234, 210);
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  padding-top: 230px;
-  align-items: center;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.adresse{
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-}
-
-
-div.adresse p {
-    text-align: center;
-    font-size: 14px;
-    text-transform: initial;
-    padding: 20px;
 }
 
   @media screen and (min-width: 750px) and (max-width:1290px){
@@ -320,15 +347,41 @@ div.formulaire{
 
  .contact{
 
-  background-color: rgb(247, 234, 210);
+  background-color: rgb(189, 162, 121);;
   padding: 0;
-  margin-top: 40px;
-  height: 250px;
+  margin: 0px;
+  height: 90%;
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
 
+}
+
+footer{
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2pt;
+  padding: 10px;
+  background: rgb(61, 57, 57);
+  color: white;
+}
+
+footer a {
+
+  list-style: none;
+  color: white;
+  text-decoration: none;
+  transition: 0.7s;
+}
+
+footer a:hover{
+
+  color: rgb(199, 177, 136);
+  transition: 0.7s;
 }
 }
 
@@ -409,6 +462,7 @@ form{
   display: flex;
   flex-wrap: wrap;
   padding: 0px;
+
 }
 
 }
@@ -424,7 +478,8 @@ form{
     position: relative;
 
 }
-        nav ul{
+
+nav ul{
 
             width: 100%;
             display: flex;
@@ -447,19 +502,22 @@ ul li a {
         }
         
 
-section.accueil{
-            height: 100vh;
-            display: flex;
-            background-image: url(ressources/accueil.png);
-            background-attachment: fixed;
-            background-size: cover;
-        }
+
         
 .logotype{
 
     width: 200px;
 }
 
+
+
+form{
+
+  display: flex;
+  width: 130%;
+  height: 100%;
+
+}
 
 .formulaire{
 
@@ -482,17 +540,13 @@ section.accueil{
   padding-top: 400px;
 }
 
-form{
 
-  display: flex;
-  width: 130%;
-
-}
 
 .contact{
   width: 100%;
+  height: 140%;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   padding: 0px;
 }
 
