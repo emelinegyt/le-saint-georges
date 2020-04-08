@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Le Saint-Georges</title>
+    <meta name="Description" content="Le restaurant le Saint-Georges vous accueille dans son univers chaleureux au coeur de la campagne">
     <link rel="icon" type="favicon" href="/ressources/favicon.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -26,7 +27,7 @@
                 <li><a href="#gallery">Galerie Photos</a></li>
                 <li><a href="/pages/actualites.html">Actualités</a></li>
                 <li><a href="/pages/reservation.html">Réservation</a></li>
-                <a `rel =" noopener "` ou `rel =" noreferrer "` href="https://www.tripadvisor.fr/Restaurant_Review-g1916963-d3792459-Reviews-Le_St_George-Saint_Juire_Champgillon_Vendee_Pays_de_la_Loire.html"
+                <a `rel =" noopener " `rel =" noreferrer "` href="https://www.tripadvisor.fr/Restaurant_Review-g1916963-d3792459-Reviews-Le_St_George-Saint_Juire_Champgillon_Vendee_Pays_de_la_Loire.html"
                     target="_blank"><i class="fab fa-tripadvisor"></i></a>
             </ul>
         </nav>
@@ -239,35 +240,31 @@ images.forEach(img => {
 let backgroundObserver = new IntersectionObserver(function(entries, self) {
   // Pour chaque entrée ciblée (les images ici)
   entries.forEach(entry => {
-    // L'API Javascript vérifie que l'entrée existe...
+
     if(entry.isIntersecting) {
-      // Ajoute une classe visible pour afficher la bonne image
+  
       entry.target.classList.add("visible");
       
-      // L'image est chargée, l'API peut s'arrêter jusqu'à la prochaine, etc.
+
       self.unobserve(entry.target);
     }
   });
 }, config);
 
-// Même travail pour les images en background
+
 const bckgImages = document.querySelectorAll('.bckg-img');
 bckgImages.forEach(img => {
-  // Observation des images à charger au fur et à mesure
+
   backgroundObserver.observe(img);
 });
 (function(window, document) {
 'use strict';
 
 
-// Exits early if all IntersectionObserver and IntersectionObserverEntry
-// features are natively supported.
 if ('IntersectionObserver' in window &&
     'IntersectionObserverEntry' in window &&
     'intersectionRatio' in window.IntersectionObserverEntry.prototype) {
 
-  // Minimal polyfill for Edge 15's lack of `isIntersecting`
-  // See: https://github.com/w3c/IntersectionObserver/issues/211
   if (!('isIntersecting' in window.IntersectionObserverEntry.prototype)) {
     Object.defineProperty(window.IntersectionObserverEntry.prototype,
       'isIntersecting', {
@@ -280,21 +277,10 @@ if ('IntersectionObserver' in window &&
 }
 
 
-/**
- * An IntersectionObserver registry. This registry exists to hold a strong
- * reference to IntersectionObserver instances currently observing a target
- * element. Without this registry, instances without another reference may be
- * garbage collected.
- */
 var registry = [];
 
 
-/**
- * Creates the global IntersectionObserverEntry constructor.
- * https://w3c.github.io/IntersectionObserver/#intersection-observer-entry
- * @param {Object} entry A dictionary of instance properties.
- * @constructor
- */
+
 function IntersectionObserverEntry(entry) {
   this.time = entry.time;
   this.target = entry.target;
@@ -303,19 +289,18 @@ function IntersectionObserverEntry(entry) {
   this.intersectionRect = entry.intersectionRect || getEmptyRect();
   this.isIntersecting = !!entry.intersectionRect;
 
-  // Calculates the intersection ratio.
+
   var targetRect = this.boundingClientRect;
   var targetArea = targetRect.width * targetRect.height;
   var intersectionRect = this.intersectionRect;
   var intersectionArea = intersectionRect.width * intersectionRect.height;
 
-  // Sets intersection ratio.
+
   if (targetArea) {
-    // Round the intersection ratio to avoid floating point math issues:
-    // https://github.com/w3c/IntersectionObserver/issues/324
+ 
     this.intersectionRatio = Number((intersectionArea / targetArea).toFixed(4));
   } else {
-    // If area is zero and is intersecting, sets to 1, otherwise to 0
+ 
     this.intersectionRatio = this.isIntersecting ? 1 : 0;
   }
 }
