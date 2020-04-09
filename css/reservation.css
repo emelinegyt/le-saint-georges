@@ -200,11 +200,15 @@ input.bouton{
   text-transform: uppercase;
   font-size: 12px;
   transition: 1s;
-
-
   
 }
 
+input.bouton:hover{
+
+  color: hsl(0, 0%, 100%);
+  background-color: rgb(189, 162, 121);
+  
+}
  /*____________ CONTACT____________*/
 
  .contact{
@@ -494,9 +498,9 @@ form{
 
   header{
 
-    position: absolute ;
+
     flex-direction: column;
-    position: relative;
+
 
 }
 
@@ -527,7 +531,8 @@ ul li a {
         
 .logotype{
 
-    width: 200px;
+    width: 450px;
+    padding: 0px;
 }
 
 
@@ -557,8 +562,8 @@ form{
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
-  padding-top: 400px;
+  height: 100%;
+  padding-top: 300px;
 }
 
 

@@ -505,12 +505,15 @@ a.reserver{
 
 .contact{
 
+
     width: 70%;
     height: 200px;
     margin: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
 
 }
 
@@ -910,18 +913,29 @@ h1{
 /*_____________LE RESTAURANT ____________*/
         
 #lieu{
-        
+            width: 100%;
             height: 130vh;
         }
 section#restaurant{
            
-            width: 80%;
+            width: 90%;
             margin: auto;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
         }
+
+section#cave{
+           
+            width: 90%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
         
 div.lesaintgeorges{
 
@@ -934,23 +948,32 @@ div.lesaintgeorges{
             
 }
         
-
 /*____________ CARTE & MENU ____________*/
+            
+section#carte{
+            
+    height: 100%;
+    width: 100%;
+}
 
-        
-        .pdf{
-            display: flex;
-            height: 65%;
-            width: 100%;
-            background: black;
-        }
-    
-        
-        .color{
-            width: 20vh;
-        }
-        
-        
+.pdf{
+    display: flex;
+    flex-direction: column;
+    height: 65%;
+    width: 100%;
+    padding: 30px;
+    background: black;
+    background-image: url(./ressources/plat-colore.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.color{
+    width: 0;
+    visibility: hidden;
+}
+
+
         
         /*____________ Réserver ____________*/
         
@@ -1120,6 +1143,14 @@ section.accueil{
     
 }
 
+
+section.cave{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
 h1{
 
     text-transform: uppercase;
@@ -1155,12 +1186,17 @@ section#restaurant{
                 justify-content: space-between;
                 align-items: center;
             }
-            
-            
-.cave {
-       
-            padding: 0px;
+
+section#cave{
+           
+                width: 80%;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
             }
+
 .chef{
                 
             width: 90%;
