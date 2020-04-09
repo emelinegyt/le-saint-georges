@@ -60,7 +60,7 @@ ul li a:hover {
     transition: 0.5s;
 }
 
-i{
+.tripadvisor{
 
     color: white;
     font-size: 25px;
@@ -68,7 +68,7 @@ i{
     transition: 0.7s;
 }
 
-i:hover{
+div a i:hover{
 
     color: rgb(177, 158, 124);
     transition: 0.7s;
