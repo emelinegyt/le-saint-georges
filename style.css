@@ -280,9 +280,9 @@ a.reservez{
     align-items: center;
     
 }
-a.cartemenu{
+a.cartemenu button{
 
-    display: flex;
+
     justify-content: center;
     align-items: center;
     padding-left:40px;
@@ -298,9 +298,10 @@ a.cartemenu{
     text-transform: uppercase;
     transition: 0.5s;
     font-weight: bold;
+    
 }
 
-a.cartemenu:hover{
+a.cartemenu button:hover{
 
 
         transform: scale(1.1);
@@ -326,7 +327,7 @@ a.cartemenu:hover{
     align-items: center;
 }
 
-.reservation button{
+.reservation a.reserver button{
 
 
     width: 260px;
@@ -343,15 +344,8 @@ a.cartemenu:hover{
     
 }
 
-a.reserver{
 
-    width: 260px;
-    text-decoration: none;
-    color: rgb(41, 41, 41);
-}
-
-
-.reservation button:hover{
+.reservation a.reserver button:hover{
 
         transition: 1s;
         transform: scale(1.1);
@@ -984,11 +978,11 @@ section#carte{
         
         /*____________ Réserver ____________*/
         
-        .animation{
+.animation{
             width: 100%;
         }
         
-        .reservation{
+.reservation{
             width: 100%;
             height: 300px;
             background-color: rgb(248, 242, 233);
@@ -998,7 +992,7 @@ section#carte{
             align-items: center;
         }
         
-        .reservation button{
+.reservation button{
         
         
             width: 260px;
@@ -1013,7 +1007,7 @@ section#carte{
             transition: 1s;
         }
         
-        .reservation p{
+.reservation p{
         
             text-align: center;
             padding-left: 40px;
@@ -1037,7 +1031,7 @@ section#carte{
         
         
         
-          .temoignage{
+   .temoignage{
             width: 80%;
             display: flex;
             flex-direction: column;
@@ -1046,7 +1040,7 @@ section#carte{
             padding: 10px;
         }
         
-        .paul{
+ .paul{
         
             display: flex;
             justify-content: center;
@@ -1057,7 +1051,7 @@ section#carte{
         
         /*____________ CONTACT____________*/
         
-        .contact{
+.contact{
         
             width: 90%;
             height: 500px;
@@ -1066,7 +1060,7 @@ section#carte{
         
         }
         
-        .adresse{
+.adresse{
         
             padding: 20px;
         }
