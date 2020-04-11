@@ -353,8 +353,8 @@ form{
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
-  padding-top: 300px;
+  height: 100%;
+  padding-top: 150px;
 }
 
 
@@ -471,8 +471,8 @@ ul li a {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
-  padding-top: 400px;
+  height: 100%;
+  padding-top: 250px;
 }
 
 form{
@@ -496,51 +496,63 @@ form{
 
 @media screen and (max-width:500px){
 
+
   header{
-
-
+    
+    position: relative ;
     flex-direction: column;
 
+}
+
+
+nav{
+
+    padding: 10px;
 
 }
+
 
 nav ul{
 
             width: 100%;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            list-style: none;
-            text-transform: uppercase;
+            justify-content: center;
          
 }
         
 ul li a {
-        
+
             text-decoration: none;
             color: rgb(255, 255, 255);
             letter-spacing: 1pt;
             font-family: 'Montserrat', sans-serif;
             transition: 0.5s;
-            padding: 10px;
+            font-size: 12px;
         }
-        
 
-
-        
 .logotype{
 
-    width: 450px;
-    padding: 0px;
+    width: 100%;
+        }
+        
+.logo{
+
+            width: 50%;
+          }
+                      
+i{
+
+    padding-top: 20px;
 }
+
 
 
 
 form{
 
   display: flex;
-  width: 130%;
+  width: 100%;
   height: 100%;
 
 }
@@ -563,9 +575,8 @@ form{
   flex-direction: column;
   width: 100%;
   height: 100%;
-  padding-top: 300px;
+  padding-top: 50px;
 }
-
 
 
 .contact{

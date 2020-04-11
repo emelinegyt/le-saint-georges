@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Le Saint-Georges</title>
   <meta name="Description" content="Suivez l'actualites du restaurant le Saint-Georges.">
-  <link  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-  <link rel =" noopener noreferrer " href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel =" noopener noreferrer " href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
-
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  <link rel=" noopener noreferrer " href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <li> <a class="tripadvisor" rel=" noreferrer noopener "
+      href="https://www.tripadvisor.fr/Restaurant_Review-g1916963-d3792459-Reviews-Le_St_George-Saint_Juire_Champgillon_Vendee_Pays_de_la_Loire.html"
+      target="_blank"><i class="fab fa-tripadvisor"></i></a></li>
   <link rel="stylesheet" href="../css/actualites.css">
 </head>
 
@@ -17,78 +18,83 @@
   <header>
 
     <div class="logotype">
-      <a href="../index.html"><img class="logo" src="../logoblancor.png" alt="Logo"></a>
+       <a href="../index.html"><img class="logo" src="#" data-src="../logoblancor.png" alt="Logo"></a>
     </div>
     <nav>
-      <ul>
-        <li><a href="/index.html">Le restaurant</a></li>
-        <li><a href="/pages/carte.html">Carte & Menu</a></li>
-        <li><a href="../index.html#gallery">Galerie Photos</a></li>
-        <li><a href="#">Actualités</a></li>
-        <li><a href="/pages/reservation.html">Réservation</a></li>
-        <a `rel =" noopener "` ou `rel =" noreferrer "` href="https://www.tripadvisor.fr/Restaurant_Review-g1916963-d3792459-Reviews-Le_St_George-Saint_Juire_Champgillon_Vendee_Pays_de_la_Loire.html" target="_blank"><i class="fab fa-tripadvisor"></i></a>
-      </ul>
+       <ul>
+          <li><a href="../index.html">Le restaurant</a></li>
+          <li><a href="/pages/carte.html">Carte & Menu</a></li>
+          <li><a href="../index.html#gallery">Galerie Photos</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="../pages/reservation.html">Réservation</a></li>
+          <a rel =" noopener noreferrer " href="https://www.tripadvisor.fr/Restaurant_Review-g1916963-d3792459-Reviews-Le_St_George-Saint_Juire_Champgillon_Vendee_Pays_de_la_Loire.html" target="_blank"><i class="fab fa-tripadvisor"></i></a>
+       </ul>
     </nav>
-  </header>
-  <div class="actualites">
-    <H1>Nos actualités</H1>
-  </div>
+ </header>
 
-  <div class="row">
-    <div class="column">
-      <div class="card">
-        <img class="actu" src="/ressources/cave.jpg" alt="actualité ouverture de la cave à vin">
-        <div class="container">
-          <h2>Le chef récompensé</h2>
-          <p class="title">CEO &amp; Founder</p>
-          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        </div>
+
+  <section class="container">
+    <div class="cards">
+      <div class="card" href="#">
+        <img class="card-header" src="../ressources/plat3.jpg" alt="">
+        <span class="card-title">
+          <h3>La rénovation du Saint-Georges</h3>
+        </span>
+        <span class="texte">
+          A summary will also be present. Usually two to three brief sentences about the content on the detail page.
+        </span>
+        <span class="date">
+          Publié le 3 avril 2020
+        </span>
       </div>
-    </div>
 
-    <div class="column">
-      <div class="card">
-        <img class="actu" src="/ressources/cave.jpg" alt="actualité">
-        <div class="container">
-          <h2>La cave à vin</h2>
-          <p class="title">Juin 2019</p>
-          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        </div>
+      <div class="card" href="#">
+        <img class="card-header" src="../ressources/plat3.jpg" alt="">
+        <span class="card-title">
+          <h3>This is a title for a card that is a bit longer in length</h3>
+        </span>
+        </span>
+        <span class="texte">
+          Each card is created from an &lt;a&gt; tag so the whole card is linked.
+        </span>
+        <span class="date">
+          Pubblié le 1 Juin 2020
+        </span>
       </div>
-    </div>
 
-    <div class="column">
-      <div class="card">
-        <img class="actu" src="/ressources/table-repas.jpg" alt="le chef mange avec les clients">
-        <div class="container">
-          <h2>Le chef mange avec vous</h2>
-          <p class="title">Février 2017</p>
-          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-
-        </div>
+      <div class="card" href="#">
+        <img class="photo" src="../ressources/plat3.jpg" alt="">
+        <span class="card-title">
+          <h3>This is a title for a card</h3>
+        </span>
+        </span>
+        <span class="texte">
+          Using Flexbox is such a an easy, well supported way for grid-style content, such as cards. The cards height
+          will expand to match the longest item.
+        </span>
+        <span class="date">
+          Publié le 23 mars 2020
+        </span>
       </div>
-    </div>
-  </div>
+  </section>
 
-
-
-
-
+  </section>
   <footer>Le Saint-Georges - 2020 <a href="./pages/mentions-legales.html">- Mentions Légales</a> </footer>
 
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-      AOS.init(
-          { duration: 1700 }
-      );
+    AOS.init(
+      { duration: 1700 }
+    );
   </script>
-  <!-- Polyfill pour l'API Intersection Observer -->
-<script src="./js/intersection-observer-polyfill.js"></script>
 
+
+<script src="../js/intersection-observer-polyfill.js"></script>
+    
 <!-- Script pour le Lazy Loading -->
 <!-- (On peut ajouter "async" ou "defer" en attribut) -->
-<script src="./js/intersection-observer-polyfill.js"></script>
+<script src="../js/intersection-observer-script.js"></script>
 
 </body>
 

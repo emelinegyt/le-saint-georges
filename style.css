@@ -708,7 +708,7 @@ section#restaurant.cave {
 }
 
 
-@media screen and (min-width: 750px) and (max-width:1000px){
+@media screen and (min-width: 790px) and (max-width:1000px){
 
     header{
 
@@ -846,7 +846,7 @@ width: 50%;
 
 
 
-@media screen and (min-width: 500px) and (max-width: 750px){
+@media screen and (min-width: 500px) and (max-width: 790px){
 
     header{
 
@@ -868,7 +868,8 @@ width: 50%;
              
                 
             }
-            
+
+
 ul li a {
             
                 text-decoration: none;

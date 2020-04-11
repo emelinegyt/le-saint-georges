@@ -161,6 +161,8 @@ a.reserver{
 .adresse{
 
     display: flex;
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -188,6 +190,8 @@ footer{
 footer a {
 
     list-style: none;
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
     color: white;
     text-decoration: none;
     transition: 0.7s;
@@ -312,59 +316,6 @@ footer a:hover{
 }
 
 
-@media screen and (min-width: 750px) and (max-width:900px){
-
-
-    
-    nav{
-    
-            width: 80%;
-            display: flex;
-            justify-content: center;
-           
-            
-     
-    }
-    nav ul{
-    
-        width: 90%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        list-style: none;
-        text-transform: uppercase;
-     
-        
-    }
-    
-    ul li a {
-
-        font-size: 10px;
-    }
-    
-    
-    ul li a:hover {
-    
-        text-decoration: none;
-        color: rgb(236, 91, 72);
-        letter-spacing: 1pt;
-        font-family: 'Montserrat', sans-serif;
-        transition: 0.5s;
-    }
- 
-    
-.logotype{
-        display: flex;
-        align-items: center;
-        width: 20%;
-        padding-left: 40px;
-        padding-top: 10px;
-    }
-.logo{
-
-        width: 100%;
-    }
-}
 
 
 @media screen and (min-width: 750px) and (max-width:1000px){
@@ -531,35 +482,54 @@ div.adresse p {
         
         position: relative ;
         flex-direction: column;
+        height: 25vh;
     
     }
-            nav ul{
+    
+    
+    nav{
+    
+        padding: 10px;
+    
+    }
+    
+    
+    nav ul{
     
                 width: 100%;
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
-                align-items: center;
-                list-style: none;
-                text-transform: uppercase;
+                justify-content: center;
              
     }
             
     ul li a {
-            
+    
                 text-decoration: none;
                 color: rgb(255, 255, 255);
                 letter-spacing: 1pt;
                 font-family: 'Montserrat', sans-serif;
                 transition: 0.5s;
-                padding: 10px;
-                font-size: 10px;
+                font-size: 12px;
             }
     
-    .logotype{
+div.logotype{
     
-                width: 400px;
+        width: 100%;
+
             }
+            
+.logo{
+    
+        width: 50%;
+
+  }
+                          
+    i{
+    
+        padding-top: 20px;
+    }
+    
 
   /*____________ carte____________*/
 
@@ -567,7 +537,7 @@ div.adresse p {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 800px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
