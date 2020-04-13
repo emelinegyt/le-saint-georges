@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel=" noopener noreferrer " href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.min.css">
 </head>
 
@@ -33,12 +33,13 @@
         <li><a href="#gallery">Galerie Photos</a></li>
         <li><a href="/pages/actualites.html">Actualités</a></li>
         <li><a href="/pages/reservation.html">Réservation</a></li>
-        <li> <a class="tripadvisor" rel=" noreferrer noopener " href="https://www.tripadvisor.fr/Restaurant_Review-g1916963-d3792459-Reviews-Le_St_George-Saint_Juire_Champgillon_Vendee_Pays_de_la_Loire.html"
-            target="_blank"><i class="fab fa-tripadvisor"></i></a></li>
+        <a class="tripadvisor" rel=" noreferrer noopener " href="https://www.tripadvisor.fr/Restaurant_Review-g1916963-d3792459-Reviews-Le_St_George-Saint_Juire_Champgillon_Vendee_Pays_de_la_Loire.html"
+            target="_blank"><i class="fab fa-tripadvisor"></i></a>
       </ul>
-
+   
     </nav>
   </header>
+  
 
   <section class="accueil">
     <div class="presentation">
@@ -185,6 +186,16 @@
       { duration: 1700 }
     );
   </script>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
 
 
 

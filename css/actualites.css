@@ -264,111 +264,118 @@ footer a:hover{
 
   @media screen and (min-width: 750px) and (max-width:1290px){
 
+    header{
 
-    
-    nav{
-    
-            width: 80%;
-            display: flex;
-            justify-content: center;
-           
-            
-     
-    }
-    nav ul{
-    
-        width: 80%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        list-style: none;
-        text-transform: uppercase;
-     
-        
-    }
-    
-    ul li a {
-
-        font-size: 13px;
-    }
-    
-    
-    ul li a:hover {
-    
-        text-decoration: none;
-        color: rgb(236, 91, 72);
-        letter-spacing: 1pt;
-        font-family: 'Montserrat', sans-serif;
-        transition: 0.5s;
-    }
- 
-    
-.logotype{
-        display: flex;
-        align-items: center;
-        width: 20%;
-        padding-left: 40px;
-        padding-top: 10px;
-    }
-.logo{
-
-        width: 100%;
-    }
-
-
+      width: 100%;
   }
 
+  nav{
+  
+          width: 80%;
+          display: flex;
+          justify-content: center;
+         
+          
+   
+  }
+  nav ul{
+  
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+      text-transform: uppercase;
+   
+      
+  }
+
+  ul li{
+
+    width: 100%;
+  }
+  
+  ul li a {
+
+      font-size: 9px;
+  }
+  
+  
+  ul li a:hover {
+  
+      text-decoration: none;
+      color: rgb(236, 91, 72);
+      letter-spacing: 1pt;
+      font-family: 'Montserrat', sans-serif;
+      transition: 0.5s;
+  }
+
+  
+.logotype{
+      display: flex;
+      align-items: center;
+      width: 20%;
+      padding-left: 40px;
+      padding-top: 10px;
+  }
+.logo{
+
+      width: 100%;
+  }
+  }
 
   @media screen and (min-width: 500px) and (max-width: 750px){
 
     header{
   
-        position: absolute ;
-        display: flex;
-        flex-direction: column;
-    }
-   
-   
-  nav ul{
-    
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center;
-                list-style: none;
-                text-transform: uppercase;
-             
-                
-            }
-            
-  ul li a {
-            
-                text-decoration: none;
-                color: rgb(255, 255, 255);
-                letter-spacing: 1pt;
-                font-family: 'Montserrat', sans-serif;
-                transition: 0.5s;
-                padding: 90px;
-                font-size: 10px;
+      position: absolute ;
+      display: flex;
+      flex-direction: column;
   }
-            
-            
-        
-  .logotype{
+ 
+ 
+nav ul{
   
-        display: flex;
-        justify-content: center;
-        width: 70%;        
-        padding: 0px;
-  }
-  }
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: center;
+              list-style: none;
+              text-transform: uppercase;
+           
+              
+          }
+          
+ul li a {
+          
+              text-decoration: none;
+              color: rgb(255, 255, 255);
+              letter-spacing: 1pt;
+              font-family: 'Montserrat', sans-serif;
+              transition: 0.5s;
+              padding: 90px;
+              font-size: 10px;
+}
+          
+          
+      
+.logotype{
+
+      display: flex;
+      justify-content: center;
+      width: 100%;  
+}
+
+
+}
+
+
   
   @media screen and (max-width:500px){
 
-
     header{
-      
+    
       position: relative ;
       flex-direction: column;
   
@@ -387,12 +394,12 @@ footer a:hover{
               width: 100%;
               display: flex;
               flex-direction: column;
-              justify-content: center;
+              justify-content: space-between;
            
   }
           
   ul li a {
-  
+          
               text-decoration: none;
               color: rgb(255, 255, 255);
               letter-spacing: 1pt;
@@ -403,16 +410,16 @@ footer a:hover{
   
   .logotype{
   
-      width: 100%;
+              width: 100%;
           }
           
-  .logo{
+          .logo{
   
-              width: 50%;
+              width: 60%;
             }
                         
   i{
   
       padding-top: 20px;
   }
-}
+  }  
