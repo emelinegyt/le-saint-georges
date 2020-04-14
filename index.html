@@ -31,7 +31,7 @@
     <nav>
       <ul>
         <li><a href="#lieu">Le restaurant</a></li>
-        <li><a href="/pages/carte.html">Carte & Menu</a></li>
+        <li><a href="/pages/carte.html">Carte & Menus</a></li>
         <li><a href="#gallery">Galerie Photos</a></li>
         <li><a href="/pages/actualites.html">Actualités</a></li>
         <li><a href="/pages/reservation.html">Réservation</a></li>
@@ -83,7 +83,7 @@
       <img class="chef" src="#" data-src="ressources/vin.jpg" alt="cave à vin">
       <div class="lesaintgeorges">
         <div data-aos="fade-left">
-          <h2>La cave à vins</h2>
+          <h2>La cave à vin</h2>
 
           <p class="texte">
             le Saint Georges, c’est aussi un bistrot à vin, où l’on vient déguster un vin et passer un bon
@@ -116,9 +116,6 @@
         <a class="reserver" href="../pages/reservation.html"><button>Je réserve une table !</button></a>
       </section>
   </section>
-
-
-
   <section id="gallery">
     <h2 class="lagalerie">Galerie photo</h2>
 
@@ -136,6 +133,7 @@
         width="300" height="200">
       <img class="myImages" id="myImg" src="ressources/plat-colore.jpg" alt="Gerirangerfjord, Norway" width="300"
         height="200">
+        
       <div id="myModal" class="modal">
         <span class="close">&times;</span>
         <img class="modal-content" id="img01">
@@ -220,35 +218,9 @@
   <!-- (On peut ajouter "async" ou "defer" en attribut) -->
   <script src="./js/intersection-observer-script.js"></script>
 
+  <script src="./modal.js"></script>
 
-
-  <script>  // create references to the modal...
-    var modal = document.getElementById('myModal');
-    // to all images -- note I'm using a class!
-    var images = document.getElementsByClassName('myImages');
-    // the image in the modal
-    var modalImg = document.getElementById("img01");
-    // and the caption in the modal
-    var captionText = document.getElementById("caption");
   
-    // Go through all of the images with our custom class
-    for (var i = 0; i < images.length; i++) {
-      var img = images[i];
-      // and attach our click listener for this image.
-      img.onclick = function (evt) {
-        console.log(evt);
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        captionText.innerHTML = this.alt;
-      }
-    }
-  
-    var span = document.getElementsByClassName("close")[0];
-  
-    span.onclick = function () {
-      modal.style.display = "none";
-    }
-  </script>
 </body>
 
 </html>
