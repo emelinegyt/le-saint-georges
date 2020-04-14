@@ -7,15 +7,17 @@
   <title>Le Saint-Georges</title>
   <link rel="icon" type="favicon" href="/ressources/favicon.png" />
   <link rel=”canonical” href=”index.html” />
-  <meta properiété=”og:titre” contenu="Le Saint-Georges - restaurant gastronomique à Saint-Juire-Champgillon"/>
+  <meta properiété=”og:titre” contenu="Le Saint-Georges - restaurant gastronomique à Saint-Juire-Champgillon" />
   <meta properiété=”og:type” contenu=”siteweb” />
-  <proprieté meta=”og:image” contenu=”http://www.le-saint-georges.netlify.com/ressources/plat-colore.jpg”/>
+  <proprieté meta=”og:image” contenu=”http://www.le-saint-georges.netlify.com/ressources/plat-colore.jpg” />
   <propriété meta=”og:url” contenu=”https://le-saint-georges.netlify.com/” />
-  <propriete meta=”og:description” contenu=”Restaurant chaleureux et prêt à vous servir de bon petits plats.”/>
-  <meta name=”Description” content="Découvrez le Saint-Georges, un restaurant au coeur de la campagne vous proposant de bons plats dans une ambiance chaleureuse.">
+  <propriete meta=”og:description” contenu=”Restaurant chaleureux et prêt à vous servir de bon petits plats.” />
+  <meta name=”Description”
+    content="Découvrez le Saint-Georges, un restaurant au coeur de la campagne vous proposant de bons plats dans une ambiance chaleureuse.">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel=" noopener noreferrer " href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+  <link rel=" noopener noreferrer "
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.min.css">
 </head>
@@ -33,13 +35,14 @@
         <li><a href="#gallery">Galerie Photos</a></li>
         <li><a href="/pages/actualites.html">Actualités</a></li>
         <li><a href="/pages/reservation.html">Réservation</a></li>
-        <a class="tripadvisor" rel=" noreferrer noopener " href="https://www.tripadvisor.fr/Restaurant_Review-g1916963-d3792459-Reviews-Le_St_George-Saint_Juire_Champgillon_Vendee_Pays_de_la_Loire.html"
-            target="_blank"><i class="fab fa-tripadvisor"></i></a>
+        <a class="tripadvisor" rel=" noreferrer noopener "
+          href="https://www.tripadvisor.fr/Restaurant_Review-g1916963-d3792459-Reviews-Le_St_George-Saint_Juire_Champgillon_Vendee_Pays_de_la_Loire.html"
+          target="_blank"><i class="fab fa-tripadvisor"></i></a>
       </ul>
-   
+
     </nav>
   </header>
-  
+
 
   <section class="accueil">
     <div class="presentation">
@@ -118,17 +121,29 @@
 
   <section id="gallery">
     <h2 class="lagalerie">Galerie photo</h2>
-    <ul class="galerie">
 
-      <li><img src="#" data-src="ressources/plat3.jpg" alt="placeholder"></li>
-      <li><img src="#" data-src="ressources/table-repas.jpg" alt="placeholder"></li>
-      <li><img src="#" data-src="ressources/table.jpg" alt="placeholder"></li>
-      <li><img src="#" data-src="ressources/plat-colore.jpg" alt="placeholder"></li>
-    </ul>
+
+    <div>
+      <img class="myImages" id="myImg" src="http://onebigphoto.com/uploads/2012/10/midnight-sun-in-lofoten-norway.jpg"
+        alt="Midnight sun in Lofoten, Norway" width="300" height="200">
+      <img class="myImages" id="myImg" src="ressources/cave.jpg" alt="Fishermen's cabins in Lofoten, Norway" width="300"
+        height="200">
+      <img class="myImages" id="myImg" src="ressources/plat.jpg" alt="Fishermen's cabins in Lofoten, Norway" width="300"
+        height="200">
+      <img class="myImages" id="myImg" src="ressources/vin.jpg" alt="Fishermen's cabins in Lofoten, Norway" width="300"
+        height="200">
+      <img class="myImages" id="myImg" src="ressources/plat2.jpg" alt="Fishermen's cabins in Lofoten, Norway"
+        width="300" height="200">
+      <img class="myImages" id="myImg" src="ressources/plat-colore.jpg" alt="Gerirangerfjord, Norway" width="300"
+        height="200">
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+      </div>
+    </div>
+
   </section>
-
-
-
 
   <section class="avis">
     <H1>Témoignages</H1>
@@ -148,9 +163,9 @@
         </div>
       </div>
     </div>
-      <div class="bouton">
-       <a class="reserver" href="../pages/reservation.html"><button>Je réserve une table !</button></a>
-      </div>
+    <div class="bouton">
+      <a class="reserver" href="../pages/reservation.html"><button>Je réserve une table !</button></a>
+    </div>
   </section>
 
 
@@ -195,11 +210,7 @@
         x.style.display = "block";
       }
     }
-    </script>
-
-
-
-
+  </script>
 
 
   <!-- Polyfill pour l'API Intersection Observer -->
@@ -209,6 +220,35 @@
   <!-- (On peut ajouter "async" ou "defer" en attribut) -->
   <script src="./js/intersection-observer-script.js"></script>
 
+
+
+  <script>  // create references to the modal...
+    var modal = document.getElementById('myModal');
+    // to all images -- note I'm using a class!
+    var images = document.getElementsByClassName('myImages');
+    // the image in the modal
+    var modalImg = document.getElementById("img01");
+    // and the caption in the modal
+    var captionText = document.getElementById("caption");
+  
+    // Go through all of the images with our custom class
+    for (var i = 0; i < images.length; i++) {
+      var img = images[i];
+      // and attach our click listener for this image.
+      img.onclick = function (evt) {
+        console.log(evt);
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+    }
+  
+    var span = document.getElementsByClassName("close")[0];
+  
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+  </script>
 </body>
 
 </html>
