@@ -52,13 +52,13 @@ ul li a {
 ul li a:hover {
 
   text-decoration: none;
-  color: rgb(236, 91, 72);
+  color: rgb(177, 158, 124);
   letter-spacing: 1pt;
   font-family: 'Montserrat', sans-serif;
   transition: 0.5s;
 }
 
-.tripadvisor{
+i{
 
   color: white;
   font-size: 25px;
@@ -66,7 +66,7 @@ ul li a:hover {
   transition: 0.7s;
 }
 
-div a i:hover{
+i:hover{
 
   color: rgb(177, 158, 124);
   transition: 0.7s;
@@ -96,8 +96,10 @@ div a i:hover{
  .cards {
    display: flex;
    width: 100%;
+   height: 100%;
    -webkit-justify-content: center;
    justify-content: center;
+   align-items: center;
    -webkit-flex-wrap: wrap;
    flex-wrap: wrap;
    margin-top: 15px;
@@ -185,44 +187,30 @@ h3 {
    max-width: 100%;
  }
  
-@media screen and (min-width: 1083px){
 
+ /*____________ CONTACT____________*/
 
-.container{
-
-  height: 700px;
-
-
-}
-}
-
-   /*____________ CONTACT____________*/
-
-.contact{
-
-
-    width: 100%;
-    height: 150px;
-    background: hsl(32, 21%, 88%);
-    margin-top: 90px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: 'Cormorant Garamond', serif;
-    text-transform: uppercase;
-    
+ .contact{
+  flex-wrap: wrap;
+  background: rgba(228, 214, 202, 0.85);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .adresse{
-
+  
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 30px;
+    color: rgb(48, 48, 48);
     font-family: 'Cormorant Garamond', serif;
     text-transform: uppercase;
-    
+    font-size: 20px;
 }
 
 
@@ -231,40 +219,37 @@ div.adresse p {
     font-size: 14px;
     text-transform: initial;
     padding: 20px;
-    font-family: 'Montserrat', sans-serif;
-    
+    color: rgb(46, 46, 46);
 }
-
-
+/*____________ FOOTER___________*/
 footer{
-    display: flex;
-    justify-content: center;
-    text-transform: uppercase;
-    font-size: 12px;
-    letter-spacing: 2pt;
-    padding: 10px;
-    background: rgb(61, 57, 57);
-    color: white;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2pt;
+  padding: 10px;
+  background: rgb(61, 57, 57);
+  color: white;
 }
 
 footer a {
 
-    list-style: none;
-    color: white;
-    text-decoration: none;
-    transition: 0.7s;
+  list-style: none;
+  color: white;
+  text-decoration: none;
+  transition: 0.7s;
 }
 
 footer a:hover{
 
-    color: rgb(199, 177, 136);
-    transition: 0.7s;
-
-  } 
+  color: rgb(199, 177, 136);
+  transition: 0.7s;
+}
 
   @media screen and (min-width: 750px) and (max-width:1290px){
 
-    header{
+  header{
 
       width: 100%;
   }
@@ -297,7 +282,7 @@ footer a:hover{
   
   ul li a {
 
-      font-size: 9px;
+      font-size: 11px;
   }
   
   
@@ -310,7 +295,8 @@ footer a:hover{
       transition: 0.5s;
   }
 
-  
+
+
 .logotype{
       display: flex;
       align-items: center;
@@ -362,9 +348,62 @@ ul li a {
       
 .logotype{
 
-      display: flex;
-      justify-content: center;
-      width: 100%;  
+  display: flex;
+  justify-content: center;
+  width: 70%;        
+  padding: 0px;
+}
+
+
+/*____________ FOOTER___________*/
+footer{
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2pt;
+  padding: 10px;
+  background: rgb(61, 57, 57);
+  color: white;
+}
+
+footer a {
+
+  list-style: none;
+  color: white;
+  text-decoration: none;
+  transition: 0.7s;
+}
+
+footer a:hover{
+
+  color: rgb(199, 177, 136);
+  transition: 0.7s;
+}
+/*____________ CONTACT____________*/
+
+.contact{
+  flex-wrap: wrap;
+  background: rgba(228, 214, 202, 0.85);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.adresse{
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    color: rgb(48, 48, 48);
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+    font-size: 20px;
 }
 
 
