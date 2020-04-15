@@ -418,15 +418,16 @@ a.cartemenu button:hover{
     /* Fallback color */
     background-color: rgba(0, 0, 0, 0.9);
     /* Black w/ opacity */
+ 
     
   }
   
   .modal-content {
+
     margin: auto;
     display: block;
-    width: 80%;
-    max-width: 700px;
-    position: relative;
+    width: 40%;
+    margin-top: 110px;
 
   }
   
@@ -438,7 +439,7 @@ a.cartemenu button:hover{
     text-align: center;
     color: #ccc;
     padding: 10px 0;
-    height: 150px;
+    height: 100%;
 
   }
   
@@ -460,8 +461,8 @@ a.cartemenu button:hover{
   
   .close {
     position: absolute;
-    top: 15px;
-    right: 35px;
+    top: 110px;
+    right: 500px;
     color: #f1f1f1;
     font-size: 40px;
     font-weight: bold;
@@ -476,10 +477,22 @@ a.cartemenu button:hover{
 
   }
   
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 1000px) {
     .modal-content {
-      width: 100%;
-    }
+      width: 80%;
+    margin-top: 200px;
+    
+      }
+    .close {
+        position: absolute;
+        top: 150px;
+        right: 20px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+      
   }
   /*____________ Témoignages ____________*/
 
@@ -494,7 +507,7 @@ a.cartemenu button:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(ressources/fond.jpg);
+    background-color: rgb(10, 10, 10);
   }
 
 
