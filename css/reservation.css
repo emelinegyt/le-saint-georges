@@ -14,10 +14,10 @@ header{
   align-items: center;
   justify-content: center;
   padding: 10px;
-  opacity: 0.9;
   position: fixed;
   background: black;
   z-index: 8;
+
 
 
   
@@ -55,13 +55,13 @@ ul li a {
 ul li a:hover {
 
   text-decoration: none;
-  color: rgb(236, 91, 72);
+  color: rgb(177, 158, 124);
   letter-spacing: 1pt;
   font-family: 'Montserrat', sans-serif;
   transition: 0.5s;
 }
 
-i{
+.fab.fa-tripadvisor{
 
   color: white;
   font-size: 25px;
@@ -69,7 +69,7 @@ i{
   transition: 0.7s;
 }
 
-i:hover{
+div a i:hover{
 
   color: rgb(177, 158, 124);
   transition: 0.7s;
@@ -88,7 +88,10 @@ i:hover{
   width: 60%;
 }
 
+img.active {
 
+  width: 200px;
+}
 
 
  /*____________ RESERVATION____________*/
@@ -117,7 +120,6 @@ div.formulaire{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 130px;
 
 }
 
@@ -218,8 +220,8 @@ input.bouton:hover{
   display: flex;
   margin-right: 90px;
   flex-direction: column;
-  padding-top: 230px;
-  padding-bottom: 230px;
+  padding-top: 120px;
+  padding-bottom: 120px;
   align-items: center;
   font-family: 'Montserrat', sans-serif;
 }
@@ -272,60 +274,61 @@ footer a:hover{
   transition: 0.7s;
 }
 
-  @media screen and (min-width: 750px) and (max-width:1290px){
+  @media screen and (min-width: 790px) and (max-width:1290px){
 
+    header{
 
-    
-    nav{
-    
-            width: 80%;
-            display: flex;
-            justify-content: center;
-           
-            
-     
-    }
-    nav ul{
-    
-        width: 80%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        list-style: none;
-        text-transform: uppercase;
-     
-        
-    }
-    
-    ul li a {
+      width: 100%;
+      overflow: hidden;
+  }
 
-        font-size: 13px;
-    }
-    
-    
-    ul li a:hover {
-    
-        text-decoration: none;
-        color: rgb(236, 91, 72);
-        letter-spacing: 1pt;
-        font-family: 'Montserrat', sans-serif;
-        transition: 0.5s;
-    }
- 
-    
+  nav{
+  
+          width: 80%;
+          display: flex;
+          justify-content: center;
+         
+          
+   
+  }
+  nav ul{
+  
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+      text-transform: uppercase;
+   
+      
+  }
+  
+  ul li a {
+
+      font-size: 10px;
+  }
+  
+  
+  ul li a:hover {
+  
+      text-decoration: none;
+      letter-spacing: 1pt;
+      font-family: 'Montserrat', sans-serif;
+      transition: 0.5s;
+  }
+
+  
 .logotype{
-        display: flex;
-        align-items: center;
-        width: 20%;
-        padding-left: 40px;
-        padding-top: 10px;
-    }
+      display: flex;
+      align-items: center;
+      width: 20%;
+      padding-left: 10px;
+      padding-top: 10px;
+  }
 .logo{
 
-        width: 100%;
-    }
-
-
+      width: 100%;
+  }
 /*____________ RESERVATION____________*/
 
 form{
@@ -410,49 +413,72 @@ footer a:hover{
 }
 }
 
-@media screen and (min-width: 500px) and (max-width: 750px){
+@media screen and (min-width: 500px) and (max-width: 790px){
 
   header{
 
-      position: absolute ;
-      display: flex;
-      flex-direction: column;
-  }
- 
- 
-nav ul{
-  
-              width: 100%;
-              display: flex;
-              flex-direction: column;
-              justify-content: space-between;
-              align-items: center;
-              list-style: none;
-              text-transform: uppercase;
-           
-              
-          }
-          
-ul li a {
-          
-              text-decoration: none;
-              color: rgb(255, 255, 255);
-              letter-spacing: 1pt;
-              font-family: 'Montserrat', sans-serif;
-              transition: 0.5s;
-              padding: 90px;
-              font-size: 10px;
-}
-          
-          
-      
-.logotype{
+    display: none;
 
-      display: flex;
-      justify-content: center;
-      width: 70%;        
-      padding: 0px;
 }
+
+.topnav {
+
+    background-color: black;
+    position: relative;
+    position: fixed;
+    width: 100%;
+    z-index: 300;
+
+
+
+  }
+  
+  .topnav #myLinks {
+    display: none;
+    
+  }
+#myLinks a{
+
+    display: flex;
+    justify-content: center;
+}  
+
+
+  #myLinks a:hover{
+
+    color: rgb(199, 177, 136);
+    transition: 0.5s;
+  }
+
+
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-start;   
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.5s;
+
+  }
+
+  .topnav a.icon {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 30px;
+    padding-right: 50px;
+    padding-top: 35px;
+  }
+  
+  
+img.active {
+
+    width: 220px;
+    padding: 10px;
+  }
 
 .formulaire{
 
@@ -496,63 +522,76 @@ form{
 
 @media screen and (max-width:500px){
 
-
   header{
+
+    display: none;
+
+}
+
+.topnav {
+
+    background-color: black;
+    position: relative;
+    position: fixed;
+    width: 100%;
+    z-index: 300;
+
+
+
+  }
+  
+  .topnav #myLinks {
+    display: none;
     
-    position: relative ;
-    flex-direction: column;
+  }
+#myLinks a{
 
-}
+    display: flex;
+    justify-content: center;
+}  
 
 
-nav{
+  #myLinks a:hover{
 
+    color: rgb(199, 177, 136);
+    transition: 0.5s;
+  }
+
+
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-start;   
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.5s;
+
+  }
+
+  .topnav a.icon {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 30px;
+    padding-right: 50px;
+    padding-top: 35px;
+  }
+  
+  
+img.active {
+
+    width: 220px;
     padding: 10px;
-
-}
-
-
-nav ul{
-
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-         
-}
-        
-ul li a {
-        
-            text-decoration: none;
-            color: rgb(255, 255, 255);
-            letter-spacing: 1pt;
-            font-family: 'Montserrat', sans-serif;
-            transition: 0.5s;
-            font-size: 12px;
-        }
-
-.logotype{
-
-            width: 100%;
-        }
-        
-        .logo{
-
-            width: 60%;
-          }
-                      
-i{
-
-    padding-top: 20px;
-}
-
-
+  }
 
 form{
 
   display: flex;
+  align-items: center;
   width: 100%;
-  height: 100%;
 
 }
 

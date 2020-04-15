@@ -13,7 +13,6 @@ header{
     align-items: center;
     justify-content: center;
     padding: 10px;
-    opacity: 0.9;
     position: fixed;
     background: black;
     z-index: 8;
@@ -55,7 +54,7 @@ ul li a {
 ul li a:hover {
 
     text-decoration: none;
-    color: rgb(236, 91, 72);
+    color: rgb(177, 158, 124);
     letter-spacing: 1pt;
     font-family: 'Montserrat', sans-serif;
     transition: 0.5s;
@@ -88,6 +87,10 @@ div a i:hover{
     width: 60%;
 }
 
+img.active {
+
+    width: 200px;
+  }
 /*____________ ACCUEIL ____________*/
 
 section.accueil{
@@ -370,6 +373,7 @@ a.cartemenu button:hover{
     width: 100%;
     margin-top: 90px;
     padding-top: 90px;
+    
 }
 .galerie{
     display: grid;
@@ -380,7 +384,9 @@ a.cartemenu button:hover{
     height: 100%;
     padding-bottom: 170px;
     padding-top: 60px;
+    
 }
+
 #myImg {
     border-radius: 5px;
     cursor: pointer;
@@ -412,6 +418,7 @@ a.cartemenu button:hover{
     /* Fallback color */
     background-color: rgba(0, 0, 0, 0.9);
     /* Black w/ opacity */
+    
   }
   
   .modal-content {
@@ -420,6 +427,7 @@ a.cartemenu button:hover{
     width: 80%;
     max-width: 700px;
     position: relative;
+
   }
   
   #caption {
@@ -431,12 +439,14 @@ a.cartemenu button:hover{
     color: #ccc;
     padding: 10px 0;
     height: 150px;
+
   }
   
   .modal-content,
   #caption {
     animation-name: zoom;
     animation-duration: 0.6s;
+
   }
   
   @keyframes zoom {
@@ -463,6 +473,7 @@ a.cartemenu button:hover{
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
+
   }
   
   @media only screen and (max-width: 700px) {
@@ -584,8 +595,12 @@ a.reserver{
     justify-content: center;
     align-items: center;
     padding: 30px;
-    
 }
+    
+.adresse H4{
+
+    color: rgb(177, 158, 124);
+}   
 
 
 div.adresse p {
@@ -596,7 +611,6 @@ div.adresse p {
     font-family: 'Montserrat', sans-serif;
     
 }
-
 
 
 
@@ -637,7 +651,11 @@ footer a:hover{
 }
 }
 
+div.topnav{
 
+    visibility: none;
+
+}
 
 @media screen and (min-width: 1000px) and (max-width:1290px){
 
@@ -666,14 +684,13 @@ footer a:hover{
     
     ul li a {
 
-        font-size: 13px;
+        font-size: 11px;
     }
     
     
     ul li a:hover {
     
         text-decoration: none;
-        color: rgb(236, 91, 72);
         letter-spacing: 1pt;
         font-family: 'Montserrat', sans-serif;
         transition: 0.5s;
@@ -683,8 +700,8 @@ footer a:hover{
 .logotype{
         display: flex;
         align-items: center;
-        width: 20%;
-        padding-left: 40px;
+        width: 19%;
+        padding-left: 15px;
         padding-top: 10px;
     }
 .logo{
@@ -768,7 +785,7 @@ section#restaurant.cave {
 @media screen and (min-width: 790px) and (max-width:1000px){
 
     header{
-        position: relative;
+
         width: 100%;
         overflow: hidden;
     }
@@ -796,14 +813,13 @@ section#restaurant.cave {
     
     ul li a {
 
-        font-size: 13px;
+        font-size: 10px;
     }
     
     
     ul li a:hover {
     
         text-decoration: none;
-        color: rgb(236, 91, 72);
         letter-spacing: 1pt;
         font-family: 'Montserrat', sans-serif;
         transition: 0.5s;
@@ -814,7 +830,7 @@ section#restaurant.cave {
         display: flex;
         align-items: center;
         width: 20%;
-        padding-left: 40px;
+        padding-left: 10px;
         padding-top: 10px;
     }
 .logo{
@@ -915,55 +931,69 @@ width: 50%;
 
 
 @media screen and (min-width: 500px) and (max-width: 790px){
-
     header{
 
-        position: absolute ;
-        display: flex;
-        flex-direction: column;
-    }
-   
-   
- nav ul{
+        display: none;
     
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center;
-                list-style: none;
-                text-transform: uppercase;
-             
-                
-            }
-
-
-ul li a {
-            
-                text-decoration: none;
-                color: rgb(255, 255, 255);
-                letter-spacing: 1pt;
-                font-family: 'Montserrat', sans-serif;
-                transition: 0.5s;
-                padding: 90px;
-                font-size: 10px;
- }
-            
-            
+    }
+    
+    .topnav {
+    
+        background-color: black;
+        position: relative;
+        position: fixed;
+        width: 100%;
+        z-index: 300;
+    
+    
+      }
+      
+      .topnav #myLinks {
+        display: none;
         
-.logotype{
-
+      }
+    #myLinks a{
+    
         display: flex;
         justify-content: center;
-        width: 100%;
-        margin: auto;
-        padding: 0px;
-}
-
-img.logo{
-
-        width: 250px;
-}
+    }  
+    
+    
+      #myLinks a:hover{
+    
+        color: rgb(199, 177, 136);
+        transition: 0.5s;
+      }
+    
+    
+      .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 15px;
+        display: flex;
+        justify-content: flex-start;   
+        font-family: 'Montserrat', sans-serif;
+        transition: 0.5s;
+    
+      }
+    
+      .topnav a.icon {
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 30px;
+        padding-right: 50px;
+        padding-top: 35px;
+      }
+      
+      
+    img.active {
+    
+        width: 220px;
+        padding: 10px;
+      }
 /*____________ ACCUEIL ____________*/
 
 .presentation{
@@ -1100,7 +1130,7 @@ section#carte{
         
         
         
-   .temoignage{
+.temoignage{
             width: 80%;
             display: flex;
             flex-direction: column;
@@ -1141,54 +1171,69 @@ section#carte{
 @media screen and (max-width: 500px){
 
 header{
-    overflow: hidden;
-    position: relative ;
-    flex-direction: column;
+
+    display: none;
 
 }
 
+.topnav {
 
-nav{
+    background-color: black;
+    position: relative;
+    position: fixed;
+    width: 100%;
+    z-index: 300;
 
+
+
+  }
+  
+  .topnav #myLinks {
+    display: none;
+    
+  }
+#myLinks a{
+
+    display: flex;
+    justify-content: center;
+}  
+
+
+  #myLinks a:hover{
+
+    color: rgb(199, 177, 136);
+    transition: 0.5s;
+  }
+
+
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-start;   
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.5s;
+
+  }
+
+  .topnav a.icon {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 30px;
+    padding-right: 50px;
+    padding-top: 35px;
+  }
+  
+  
+img.active {
+
+    width: 220px;
     padding: 10px;
-
-}
-
-
-nav ul{
-
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-         
-}
-        
-ul li a {
-        
-            text-decoration: none;
-            color: rgb(255, 255, 255);
-            letter-spacing: 1pt;
-            font-family: 'Montserrat', sans-serif;
-            transition: 0.5s;
-            font-size: 12px;
-        }
-
-.logotype{
-
-            width: 100%;
-        }
-        
-        .logo{
-
-            width: 60%;
-          }
-                      
-i{
-
-    padding-top: 20px;
-}
-
+  }
 /*____________ ACCUEIL ____________*/
 section.accueil{
 
@@ -1211,6 +1256,7 @@ section.accueil{
     justify-content: center;
     align-items: center;
     text-align: center;
+    overflow: hidden;
     
 }
 

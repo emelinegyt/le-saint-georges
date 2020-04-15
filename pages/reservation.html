@@ -23,7 +23,7 @@
       <nav>
          <ul>
             <li><a href="../index.html">Le restaurant</a></li>
-            <li><a href="/pages/carte.html">Carte & Menu</a></li>
+            <li><a href="./pages/carte.html">Carte & Menu</a></li>
             <li><a href="../index.html#gallery">Galerie Photos</a></li>
             <li><a href="/pages/actualites.html">Actualités</a></li>
             <li><a href="reservation.html">Réservation</a></li>
@@ -31,6 +31,21 @@
          </ul>
       </nav>
    </header>
+
+   <div class="topnav">
+      <a href="../index.html"><img class="active" src="#" data-src="../logoblancor.png" alt="Logo"></a>
+      <div id="myLinks">
+        <a href="../index.html#lieu">Le restaurant</a>
+        <a href="./pages/carte.html">Carte et Menus</a>
+        <a href="../index.html#gallery">Galerie Photos</a>
+        <a href="/pages/actualites.html">Actualités</a>
+        <a href="reservation.html">Réservation</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  
 
 
 
@@ -148,18 +163,33 @@
    
    <footer>Le Saint-Georges - 2020 <a href="./pages/mentions-legales.html">- Mentions Légales</a> </footer>
 
+  
+  
+  
+  
+   
    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init(
-            { duration: 1700 }
-        );
-    </script>
-    <!-- Polyfill pour l'API Intersection Observer -->
+   <script>
+       AOS.init(
+           { duration: 1700 }
+       );
+   </script>
+   <!-- Polyfill pour l'API Intersection Observer -->
 <script src="../js/intersection-observer-polyfill.js"></script>
 
 <!-- Script pour le Lazy Loading -->
 <!-- (On peut ajouter "async" ou "defer" en attribut) -->
 <script src="../js/intersection-observer-script.js"></script>
+<script>
+   function myFunction() {
+     var x = document.getElementById("myLinks");
+     if (x.style.display === "block") {
+       x.style.display = "none";
+     } else {
+       x.style.display = "block";
+     }
+   }
+ </script>
 
 </body>
 

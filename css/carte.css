@@ -10,15 +10,14 @@
 
 header{
     width: 100%;
-    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
-    opacity: 0.9;
     position: fixed;
     background: black;
     z-index: 8;
+
 
 
     
@@ -56,13 +55,13 @@ ul li a {
 ul li a:hover {
 
     text-decoration: none;
-    color: rgb(236, 91, 72);
+    color: rgb(177, 158, 124);
     letter-spacing: 1pt;
     font-family: 'Montserrat', sans-serif;
     transition: 0.5s;
 }
 
-i{
+.fab.fa-tripadvisor{
 
     color: white;
     font-size: 25px;
@@ -70,7 +69,7 @@ i{
     transition: 0.7s;
 }
 
-i:hover{
+div a i:hover{
 
     color: rgb(177, 158, 124);
     transition: 0.7s;
@@ -88,6 +87,11 @@ i:hover{
 
     width: 60%;
 }
+
+img.active {
+
+    width: 200px;
+  }
 
 
 
@@ -145,29 +149,36 @@ a.reserver{
 
 
 
+ /*____________ CONTACT____________*/
 
-  /*____________ CONTACT____________*/
+ .contact{
 
-.contact{
 
     width: 100%;
+    background-color: white;
+    height: 200px;
+    margin: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 30px;
-    background: white;
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+    
 }
 
 .adresse{
 
     display: flex;
-    font-family: 'Cormorant Garamond', serif;
-    text-transform: uppercase;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 30px;
 }
+    
+.adresse H4{
+
+    color: rgb(177, 158, 124);
+}   
 
 
 div.adresse p {
@@ -175,6 +186,8 @@ div.adresse p {
     font-size: 14px;
     text-transform: initial;
     padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    
 }
 
 footer{
@@ -238,7 +251,7 @@ footer a:hover{
     ul li a:hover {
     
         text-decoration: none;
-        color: rgb(236, 91, 72);
+        color: rgb(177, 158, 124);
         letter-spacing: 1pt;
         font-family: 'Montserrat', sans-serif;
         transition: 0.5s;
@@ -261,65 +274,14 @@ footer a:hover{
 
 
 
-@media screen and (min-width: 900px) and (max-width:1000px){
+@media screen and (min-width: 790px) and (max-width:1000px){
 
 
-    
-    nav{
-    
-            width: 80%;
-            display: flex;
-            justify-content: center;
-           
-            
-     
-    }
-    nav ul{
-    
-        width: 90%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        list-style: none;
-        text-transform: uppercase;
-     
-        
-    }
-    
-    ul li a {
-
-        font-size: 13px;
-    }
-    
-    
-    ul li a:hover {
-    
-        text-decoration: none;
-        color: rgb(236, 91, 72);
-        letter-spacing: 1pt;
-        font-family: 'Montserrat', sans-serif;
-        transition: 0.5s;
-    }
- 
-    
-.logotype{
-        display: flex;
-        align-items: center;
-        width: 20%;
-        padding-left: 40px;
-        padding-top: 10px;
-    }
-.logo{
+    header{
 
         width: 100%;
+        overflow: hidden;
     }
-}
-
-
-
-
-@media screen and (min-width: 750px) and (max-width:1000px){
-
 
     nav{
     
@@ -344,25 +306,31 @@ footer a:hover{
     
     ul li a {
 
-        font-size: 13px;
+        font-size: 10px;
     }
     
     
     ul li a:hover {
     
         text-decoration: none;
-        color: rgb(236, 91, 72);
+        color: rgb(177, 158, 124);
         letter-spacing: 1pt;
         font-family: 'Montserrat', sans-serif;
         transition: 0.5s;
     }
- 
+.fab.fa-tripadvisor{
+
+        color: white;
+        font-size: 25px;
+        padding: 0px;
+        transition: 0.7s;
+      }
     
 .logotype{
         display: flex;
         align-items: center;
         width: 20%;
-        padding-left: 40px;
+        padding-left: 10px;
         padding-top: 10px;
     }
 .logo{
@@ -371,56 +339,73 @@ footer a:hover{
     }
 }
 
+@media screen and (min-width: 500px) and (max-width: 790px){
 
+    header{
 
-
-
-
-
-@media screen and (min-width: 500px) and (max-width: 750px){
-
-header{
-
-        position: absolute ;
-        display: flex;
-        flex-direction: column;
-    }
-   
-   
- nav ul{
+        display: none;
     
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center;
-                list-style: none;
-                text-transform: uppercase;
-             
-                
-            }
-            
-ul li a {
-            
-                text-decoration: none;
-                color: rgb(255, 255, 255);
-                letter-spacing: 1pt;
-                font-family: 'Montserrat', sans-serif;
-                transition: 0.5s;
-                padding: 90px;
-                font-size: 10px;
- }
-            
-            
+    }
+    
+    .topnav {
+    
+        background-color: black;
+        position: relative;
+        position: fixed;
+        width: 100%;
+        z-index: 300;
+    
+    
+      }
+      
+      .topnav #myLinks {
+        display: none;
         
-.logotype{
-
+      }
+    #myLinks a{
+    
         display: flex;
         justify-content: center;
-        width: 70%;        
-        padding: 0px;
-}
-
+    }  
+    
+    
+      #myLinks a:hover{
+    
+        color: rgb(199, 177, 136);
+        transition: 0.5s;
+      }
+    
+    
+      .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 15px;
+        display: flex;
+        justify-content: flex-start;   
+        font-family: 'Montserrat', sans-serif;
+        transition: 0.5s;
+    
+      }
+    
+      .topnav a.burger {
+         
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 30px;
+        padding-right: 50px;
+        padding-top: 35px;
+        
+      }
+      
+      
+    img.active {
+    
+        width: 220px;
+        padding: 10px;
+      }
 
 /*____________ carte____________*/
 
@@ -428,6 +413,7 @@ ul li a {
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -440,7 +426,7 @@ ul li a {
   {
 
     width: 60%;
-    padding-top: 240px;
+    padding-top: 220px;
   }
 
   /*____________ CONTACT____________*/
@@ -456,6 +442,7 @@ ul li a {
     align-items: center;
     padding-top: 30px;
     background: white;
+    height: 100%;
 }
 
 .adresse{
@@ -479,57 +466,69 @@ div.adresse p {
 @media screen and (max-width: 500px){
 
     header{
-        
-        position: relative ;
-        flex-direction: column;
-        height: 25vh;
+
+        display: none;
     
     }
     
+    .topnav {
     
-    nav{
-    
-        padding: 10px;
-    
-    }
-    
-    
-    nav ul{
-    
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-             
-    }
-            
-    ul li a {
-    
-                text-decoration: none;
-                color: rgb(255, 255, 255);
-                letter-spacing: 1pt;
-                font-family: 'Montserrat', sans-serif;
-                transition: 0.5s;
-                font-size: 12px;
-            }
-    
-div.logotype{
-    
+        background-color: black;
+        position: relative;
+        position: fixed;
         width: 100%;
-
-            }
-            
-.logo{
+        z-index: 300;
     
-        width: 50%;
-
-  }
-                          
-    i{
     
-        padding-top: 20px;
-    }
+      }
+      
+      .topnav #myLinks {
+        display: none;
+        
+      }
+    #myLinks a{
     
+        display: flex;
+        justify-content: center;
+    }  
+    
+    
+      #myLinks a:hover{
+    
+        color: rgb(199, 177, 136);
+        transition: 0.5s;
+      }
+    
+    
+      .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 15px;
+        display: flex;
+        justify-content: flex-start;   
+        font-family: 'Montserrat', sans-serif;
+        transition: 0.5s;
+    
+      }
+    
+      .topnav a.burger {
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 30px;
+        padding-right: 50px;
+        padding-top: 35px;
+        
+      }
+      
+      
+    img.active {
+    
+        width: 220px;
+        padding: 10px;
+      }
 
   /*____________ carte____________*/
 
@@ -556,5 +555,4 @@ footer{
 
     width: 100%;
 }
-
 }  

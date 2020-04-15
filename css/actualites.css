@@ -6,14 +6,13 @@
     box-sizing: border-box;
 }
 
-
 header{
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px;
-  opacity: 0.9;
+  position: fixed;
   background: black;
   z-index: 8;
 
@@ -25,6 +24,7 @@ nav{
 
       width: 100%;
      
+      
 
 }
 nav ul{
@@ -58,15 +58,18 @@ ul li a:hover {
   transition: 0.5s;
 }
 
-i{
+.fab.fa-tripadvisor{
 
   color: white;
   font-size: 25px;
   padding: 0px;
   transition: 0.7s;
 }
+.fab.fa-tripadvisor:hover{
 
-i:hover{
+  color: rgb(177, 158, 124);
+}
+div a i:hover{
 
   color: rgb(177, 158, 124);
   transition: 0.7s;
@@ -85,10 +88,15 @@ i:hover{
   width: 60%;
 }
 
+img.active {
+
+  width: 200px;
+}
  /*____________ ACTUALITE____________*/
 
 
  .container {
+
    width: 100%;
    margin: 0 auto;
  }
@@ -191,35 +199,42 @@ h3 {
  /*____________ CONTACT____________*/
 
  .contact{
-  flex-wrap: wrap;
-  background: rgba(228, 214, 202, 0.85);
+
+
   width: 100%;
+  background-color: rgba(228, 214, 202, 0.4);
+  height: 200px;
+  margin: auto;
   display: flex;
-  align-items: center;
   justify-content: space-around;
-  font-family: 'Montserrat', sans-serif;
+  align-items: center;
+  font-family: 'Cormorant Garamond', serif;
+  text-transform: uppercase;
+  
 }
 
 .adresse{
-  
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-    color: rgb(48, 48, 48);
-    font-family: 'Cormorant Garamond', serif;
-    text-transform: uppercase;
-    font-size: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
 }
+  
+.adresse H4{
+
+  color: rgb(177, 158, 124);
+}   
 
 
 div.adresse p {
-    text-align: center;
-    font-size: 14px;
-    text-transform: initial;
-    padding: 20px;
-    color: rgb(46, 46, 46);
+  text-align: center;
+  font-size: 14px;
+  text-transform: initial;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+  
 }
 /*____________ FOOTER___________*/
 footer{
@@ -247,11 +262,12 @@ footer a:hover{
   transition: 0.7s;
 }
 
-  @media screen and (min-width: 750px) and (max-width:1290px){
+  @media screen and (min-width: 790px) and (max-width:1290px){
 
-  header{
+    header{
 
       width: 100%;
+      overflow: hidden;
   }
 
   nav{
@@ -274,15 +290,10 @@ footer a:hover{
    
       
   }
-
-  ul li{
-
-    width: 100%;
-  }
   
   ul li a {
 
-      font-size: 11px;
+      font-size: 10px;
   }
   
   
@@ -295,64 +306,102 @@ footer a:hover{
       transition: 0.5s;
   }
 
-
-
+  
 .logotype{
       display: flex;
       align-items: center;
       width: 20%;
-      padding-left: 40px;
+      padding-left: 10px;
       padding-top: 10px;
   }
 .logo{
 
       width: 100%;
   }
-  }
+}
 
-  @media screen and (min-width: 500px) and (max-width: 750px){
+  @media screen and (min-width: 500px) and (max-width: 790px){
 
     header{
-  
-      position: absolute ;
-      display: flex;
-      flex-direction: column;
-  }
- 
- 
-nav ul{
-  
-              width: 100%;
-              display: flex;
-              flex-direction: column;
-              justify-content: space-between;
-              align-items: center;
-              list-style: none;
-              text-transform: uppercase;
-           
-              
-          }
-          
-ul li a {
-          
-              text-decoration: none;
-              color: rgb(255, 255, 255);
-              letter-spacing: 1pt;
-              font-family: 'Montserrat', sans-serif;
-              transition: 0.5s;
-              padding: 90px;
-              font-size: 10px;
-}
-          
-          
-      
-.logotype{
 
-  display: flex;
-  justify-content: center;
-  width: 70%;        
-  padding: 0px;
-}
+      display: none;
+  
+  }
+  
+  .topnav {
+  
+      background-color: black;
+      position: relative;
+      position: fixed;
+      width: 100%;
+      z-index: 300;
+  
+  
+    }
+    
+    .topnav #myLinks {
+      display: none;
+      
+    }
+  #myLinks a{
+  
+      display: flex;
+      justify-content: center;
+  }  
+  
+  
+    #myLinks a:hover{
+  
+      color: rgb(199, 177, 136);
+      transition: 0.5s;
+    }
+  
+  
+    .topnav a {
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 15px;
+      display: flex;
+      justify-content: flex-start;   
+      font-family: 'Montserrat', sans-serif;
+      transition: 0.5s;
+  
+    }
+  
+    .topnav a.icon {
+      display: flex;
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: 30px;
+      padding-right: 50px;
+      padding-top: 35px;
+    }
+    
+    
+  img.active {
+  
+      width: 220px;
+      padding: 10px;
+    }
+/*____________ CONTACT___________*/
+
+    .contact{
+        
+      width: 90%;
+      height: 100%;
+      flex-direction: column;
+  
+  
+  }
+  
+.adresse{
+  
+      padding: 20px;
+  }
+
+  
 
 
 /*____________ FOOTER___________*/
@@ -414,51 +463,91 @@ footer a:hover{
   @media screen and (max-width:500px){
 
     header{
+
+      display: none;
+  
+  }
+  
+  .topnav {
+  
+      background-color: black;
+      position: relative;
+      position: fixed;
+      width: 100%;
+      z-index: 300;
+  
+  
+  
+    }
     
-      position: relative ;
-      flex-direction: column;
+    .topnav #myLinks {
+      display: none;
+      
+    }
+  #myLinks a{
   
-  }
-  
-  
-  nav{
-  
-      padding: 10px;
-  
-  }
-  
-  
-  nav ul{
-  
-              width: 100%;
-              display: flex;
-              flex-direction: column;
-              justify-content: space-between;
-           
-  }
-          
-  ul li a {
-          
-              text-decoration: none;
-              color: rgb(255, 255, 255);
-              letter-spacing: 1pt;
-              font-family: 'Montserrat', sans-serif;
-              transition: 0.5s;
-              font-size: 12px;
-          }
-  
-  .logotype{
-  
-              width: 100%;
-          }
-          
-          .logo{
-  
-              width: 60%;
-            }
-                        
-  i{
-  
-      padding-top: 20px;
-  }
+      display: flex;
+      justify-content: center;
   }  
+  
+  
+    #myLinks a:hover{
+  
+      color: rgb(199, 177, 136);
+      transition: 0.5s;
+    }
+  
+  
+    .topnav a {
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 15px;
+      display: flex;
+      justify-content: flex-start;   
+      font-family: 'Montserrat', sans-serif;
+      transition: 0.5s;
+  
+    }
+  
+    .topnav a.icon {
+      display: flex;
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: 30px;
+      padding-right: 50px;
+      padding-top: 35px;
+    }
+    
+    
+  img.active {
+  
+      width: 220px;
+      padding: 10px;
+    }
+  /*____________ CONTACT____________*/
+            
+.contact{
+            
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.adresse{
+
+  padding: 10px;
+}
+
+footer{
+
+font-size: 8px;
+}
+}
