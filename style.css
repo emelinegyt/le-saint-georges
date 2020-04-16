@@ -288,7 +288,7 @@ a.reservez{
     align-items: center;
     
 }
-a.cartemenu button{
+button a.cartemenu {
 
 
     justify-content: center;
@@ -309,11 +309,12 @@ a.cartemenu button{
     
 }
 
-a.cartemenu button:hover{
+button a.cartemenu:hover{
 
 
         transform: scale(1.1);
         transition: 0.7s;
+        color: rgb(105, 80, 51);
 
     }
 
