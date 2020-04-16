@@ -60,13 +60,17 @@ ul li a:hover {
     transition: 0.5s;
 }
 
-.tripadvisor{
+.fab.fa-tripadvisor{
 
     color: white;
     font-size: 25px;
     padding: 0px;
     transition: 0.7s;
-}
+  }
+  .fab.fa-tripadvisor:hover{
+  
+    color: rgb(177, 158, 124);
+  }
 
 div a i:hover{
 
